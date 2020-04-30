@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>WG.ST</title>
+  
+  <subtitle>Times.....</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="https://ghroth-follower.github.io/"/>
+  <updated>2020-04-30T06:25:46.339Z</updated>
+  <id>https://ghroth-follower.github.io/</id>
+  
+  <author>
+    <name>Ghroth-follower</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>hexo建站过程与细节</title>
+    <link href="https://ghroth-follower.github.io/2020/04/30/hexo-jian-zhan-guo-cheng-yu-xi-jie/"/>
+    <id>https://ghroth-follower.github.io/2020/04/30/hexo-jian-zhan-guo-cheng-yu-xi-jie/</id>
+    <published>2020-04-30T05:32:47.000Z</published>
+    <updated>2020-04-30T06:25:46.339Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;本篇文章只讲述博主建站初期从各网站搜集和自己琢磨写出的&lt;strong&gt;非官方文档记录&lt;/strong&gt;的blog修改过程，博主没有任何html基础与建站经验，内容仅供参考&lt;/p&gt;
+&lt;hr&gt;
+&lt;h1 id=&quot;matery主题的安装与修改优化&quot;&gt;&lt;a
+        
+      
+    
+    </summary>
+    
+    
+      <category term="web" scheme="https://ghroth-follower.github.io/categories/web/"/>
+    
+    
+      <category term="hexo" scheme="https://ghroth-follower.github.io/tags/hexo/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>K2P A2刷机遇到的telnet问题</title>
+    <link href="https://ghroth-follower.github.io/2018/08/30/k2p-a2-shua-ji-yu-dao-de-telnet-wen-ti/"/>
+    <id>https://ghroth-follower.github.io/2018/08/30/k2p-a2-shua-ji-yu-dao-de-telnet-wen-ti/</id>
+    <published>2018-08-30T07:38:20.000Z</published>
+    <updated>2020-04-30T09:27:03.413Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;捡了一块K2P A2，早就听闻大名鼎鼎的斐讯免费路由被各路大神刷成高达，所以我自己也一直想试试，但是在刷固件途中遇到了不少困难&lt;/p&gt;
+&lt;h2 id=&quot;文章只针对k2p-22-8-5-189及其更高版本&quot;&gt;&lt;a
+        
+      
+    
+    </summary>
+    
+    
+      <category term="硬件" scheme="https://ghroth-follower.github.io/categories/%E7%A1%AC%E4%BB%B6/"/>
+    
+    
+      <category term="杂项" scheme="https://ghroth-follower.github.io/tags/%E6%9D%82%E9%A1%B9/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>从这里开始</title>
+    <link href="https://ghroth-follower.github.io/2018/04/26/cong-zhe-li-kai-shi/"/>
+    <id>https://ghroth-follower.github.io/2018/04/26/cong-zhe-li-kai-shi/</id>
+    <published>2018-04-26T10:00:57.000Z</published>
+    <updated>2020-04-30T07:04:17.421Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;没有技术，没有能力，概率更新&lt;/p&gt;
+&lt;h1 id=&quot;博客现状&quot;&gt;&lt;a href=&quot;#博客现状&quot; class=&quot;headerlink&quot; title=&quot;博客现状&quot;&gt;&lt;/a&gt;博客现状&lt;/h1&gt;&lt;p&gt;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="show" scheme="https://ghroth-follower.github.io/categories/show/"/>
+    
+    
+      <category term="杂项" scheme="https://ghroth-follower.github.io/tags/%E6%9D%82%E9%A1%B9/"/>
+    
+  </entry>
+  
+</feed>

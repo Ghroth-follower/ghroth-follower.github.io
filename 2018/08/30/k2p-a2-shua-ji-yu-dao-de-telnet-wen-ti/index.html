@@ -638,33 +638,33 @@
     </div>
 
     
+        <link rel="stylesheet" href="/libs/gitalk/gitalk.css">
+<link rel="stylesheet" href="/css/my-gitalk.css">
 
-    
-        <link rel="stylesheet" href="/libs/gitment/gitment-default.css">
-<link rel="stylesheet" href="/css/gitment.css">
-
-<div class="gitment-card card" data-aos="fade-up">
+<div class="card gitalk-card" data-aos="fade-up">
     <div class="comment_headling" style="font-size: 20px; font-weight: 700; position: relative; padding-left: 20px; top: 15px; padding-bottom: 5px;">
         <i class="fas fa-comments fa-fw" aria-hidden="true"></i>
         <span>评论</span>
     </div>
-    <div id="gitment-content" class="card-content"></div>
+    <div id="gitalk-container" class="card-content"></div>
 </div>
 
-<script src="/libs/gitment/gitment.js"></script>
+<script src="/libs/gitalk/gitalk.min.js"></script>
 <script>
-var gitment = new Gitment({
-    id: 'Thu Aug 30 2018 15:38:20 GMT+0800',
-    owner: 'ghroth-follower',
-    repo: 'ghroth-follower.github.io',
-    oauth: {
-        client_id: '32615b91b55e11f23fbb',
-        client_secret: '198f196394bd3fe584208edfc194014083349056'
-    }
-});
+    let gitalk = new Gitalk({
+        clientID: '32615b91b55e11f23fbb',
+        clientSecret: '198f196394bd3fe584208edfc194014083349056',
+        repo: 'ghroth-follower.github.io',
+        owner: 'ghroth-follower',
+        admin: "ghroth-follower",
+        id: '2018-08-30T15-38-20',
+        distractionFreeMode: false  // Facebook-like distraction free mode
+    });
 
-gitment.render('gitment-content');
+    gitalk.render('gitalk-container');
 </script>
+
+    
 
     
 

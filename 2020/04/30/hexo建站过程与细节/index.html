@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="从这里开始, WG.ST">
+    <meta name="keywords" content="hexo建站过程与细节, WG.ST">
     <meta name="description" content="格赫罗斯表达了我对物质宇宙的向往与恐惧">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>从这里开始 | WG.ST</title>
+    <title>hexo建站过程与细节 | WG.ST</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -267,12 +267,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/20.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/3.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">从这里开始</h1>
+                    <h1 class="description center-align post-title">hexo建站过程与细节</h1>
                 </div>
             </div>
         </div>
@@ -389,8 +389,8 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/%E6%9D%82%E9%A1%B9/">
-                                <span class="chip bg-color">杂项</span>
+                            <a href="/tags/hexo/">
+                                <span class="chip bg-color">hexo</span>
                             </a>
                         
                     </div>
@@ -401,8 +401,8 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/show/" class="post-category">
-                                show
+                            <a href="/categories/web/" class="post-category">
+                                web
                             </a>
                         
                     </div>
@@ -414,7 +414,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2020-04-26
+                    2020-04-30
                 </div>
                 
 
@@ -430,12 +430,29 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>没有技术，没有能力，概率更新</p>
-<h1 id="博客现状"><a href="#博客现状" class="headerlink" title="博客现状"></a>博客现状</h1><p> 建起来的小窝<br>国内域名备案和实名认证办不下来，没域名也不能挂cdn来给我的博客加速，所以暂时不会改掉github.io的个人域名<br>另外这个网页其实很多地方还都是完全的模板。。。处于很糙的一个状态大部分都是默认的，等闲了，等闲了我一定改一改</p>
-<h2 id="MGS"><a href="#MGS" class="headerlink" title="MGS"></a>MGS</h2><p>l4d2: connect 111.230.200.142</p>
-<h2 id="关于留言板"><a href="#关于留言板" class="headerlink" title="关于留言板"></a>关于留言板</h2><p>之后会把gitalk换掉弄成匿名的留言板(valine disqus什么的)。。。这样就也可以当我的提问箱了</p>
-<h2 id="音乐按钮"><a href="#音乐按钮" class="headerlink" title="音乐按钮"></a>音乐按钮</h2><p>左下角的音乐按钮是matery自带的，貌似不配置是会自动放歌。。<br>配置的话不只是可以播网易云之类的，也可以播自己的，闲的话我尽量录一下我自己的钢琴导进去，这样我的blog会更”原创”一点(虽然谱子不是我原创的就对了</p>
-
+                <p>本篇文章只讲述博主建站初期从各网站搜集和自己琢磨写出的<strong>非官方文档记录</strong>的blog修改过程，博主没有任何html基础与建站经验，内容仅供参考</p>
+<hr>
+<h1 id="matery主题的安装与修改优化"><a href="#matery主题的安装与修改优化" class="headerlink" title="matery主题的安装与修改优化"></a>matery主题的安装与修改优化</h1><p>matery主题对于我这样的建站新手来说还是比较友好的，主题也很好看自定义程度很高，<strong>但是因为其自身缺陷我无法完成部分修改(遇到问题)</strong></p>
+<p><a href="https://github.com/blinkfox/hexo-theme-matery/blob/develop/README_CN.md" target="_blank" rel="noopener">在文章之前贴上blinkfox的github原项目中文指南</a></p>
+<h2 id="去除banner图片背景彩虹色"><a href="#去除banner图片背景彩虹色" class="headerlink" title="去除banner图片背景彩虹色"></a>去除banner图片背景彩虹色</h2><p>打开<em>themes/matery/source/css/matery.css</em>文件(367行，也可以快速搜索.bg-cover:after进行定位):</p>
+<pre><code>.bg-cover:after {
+/*  -webkit-animation: rainbow 60s infinite;
+animation: rainbow 60s infinite;*/
+}</code></pre><p>然后使用注释掉这两行css(注意需要*/结尾)</p>
+<h2 id="头像-页面角标的更改与制作"><a href="#头像-页面角标的更改与制作" class="headerlink" title="头像,页面角标的更改与制作"></a>头像,页面角标的更改与制作</h2><p><em>\themes\hexo-theme-matery\source\</em>中替换favicon.png</p>
+<p><em>\themes\hexo-theme-matery\source\medias</em>中替换avatar.jpg与logo.png</p>
+<p><em>logo制作没有工具的话可以使用</em><a href="http://www.uugai.com/" target="_blank" rel="noopener">此处在线制作</a></p>
+<h2 id="gitalk-留言板-的安装"><a href="#gitalk-留言板-的安装" class="headerlink" title="gitalk(留言板)的安装"></a>gitalk(留言板)的安装</h2><p>matery主题是内置gitalk之类的很多留言插件的，我们在启用内置之前首先要做好前置准备，<strong>这里博主示例安装的是gitalk</strong></p>
+<p>首先<a href="https://github.com/settings/applications/new" target="_blank" rel="noopener">申请一个Github APP</a></p>
+<p>这边要注意Homepage URL和Authorization callback URL一定要填写自己博客的域名，<strong>必须有http前缀，其他的可以随意</strong></p>
+<p>申请到之后记录下Client ID与Client Secret，得到之后在 <em>\themes\hexo-theme-matery_config.yml</em> 中搜索gitalk，并且天赋client id与secret启用</p>
+<pre><code>  enable: ture
+  owner: ghroth-follower
+  repo: ghroth-follower.github.io
+  oauth:
+clientId: *** 
+clientSecret: *** #填入这两项
+  admin: ghroth-follower</code></pre><h2 id="未完待续"><a href="#未完待续" class="headerlink" title="未完待续"></a>未完待续</h2>
             </div>
             <hr/>
 
@@ -460,7 +477,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://ghroth-follower.github.io/2020/04/26/%E4%BB%8E%E8%BF%99%E9%87%8C%E5%BC%80%E5%A7%8B/">https://ghroth-follower.github.io/2020/04/26/%E4%BB%8E%E8%BF%99%E9%87%8C%E5%BC%80%E5%A7%8B/</a>
+                    <a href="https://ghroth-follower.github.io/2020/04/30/hexo%E5%BB%BA%E7%AB%99%E8%BF%87%E7%A8%8B%E4%B8%8E%E7%BB%86%E8%8A%82/">https://ghroth-follower.github.io/2020/04/30/hexo%E5%BB%BA%E7%AB%99%E8%BF%87%E7%A8%8B%E4%B8%8E%E7%BB%86%E8%8A%82/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -498,8 +515,8 @@
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/%E6%9D%82%E9%A1%B9/">
-                                    <span class="chip bg-color">杂项</span>
+                                <a href="/tags/hexo/">
+                                    <span class="chip bg-color">hexo</span>
                                 </a>
                             
                         </div>
@@ -544,7 +561,7 @@
         repo: 'ghroth-follower.github.io',
         owner: 'ghroth-follower',
         admin: "ghroth-follower",
-        id: '2020-04-26T18-00-57',
+        id: '2020-04-30T13-32-47',
         distractionFreeMode: false  // Facebook-like distraction free mode
     });
 
@@ -568,9 +585,10 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
                 <a href="/2020/04/30/hexo%E5%BB%BA%E7%AB%99%E8%BF%87%E7%A8%8B%E4%B8%8E%E7%BB%86%E8%8A%82/">
                     <div class="card-image">
@@ -590,9 +608,9 @@ matery主题的安装与修改优化matery主题对于我这样的建站新手�
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2020-04-30
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-04-30
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
@@ -605,6 +623,7 @@ matery主题的安装与修改优化matery主题对于我这样的建站新手�
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
@@ -620,7 +639,7 @@ matery主题的安装与修改优化matery主题对于我这样的建站新手�
         
         <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge right-badge text-color">
-                本篇&nbsp;<i class="far fa-dot-circle"></i>
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
                 <a href="/2020/04/26/%E4%BB%8E%E8%BF%99%E9%87%8C%E5%BC%80%E5%A7%8B/">
@@ -655,7 +674,6 @@ matery主题的安装与修改优化matery主题对于我这样的建站新手�
                         </span>
                     </div>
                 </div>
-
                 
                 <div class="card-action article-tags">
                     

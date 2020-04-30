@@ -251,6 +251,7 @@ mark {
 
 .bg-color {
     background-image: linear-gradient(to right, #000000 0%, #000000 100%);
+    opacity: 0.8;
 }
 
 .text-color {
@@ -2133,4 +2134,16 @@ footer .copy-right {
     height: 50px;
     padding: 0px;
     margin: 0px;
+}
+
+
+canvas {
+  position: fixed;
+  right: 0px;
+  bottom: 0px;
+  min-width: 100%;
+  min-height: 100%;
+  height: auto;
+  width: auto;
+  z-index: -1;
 }

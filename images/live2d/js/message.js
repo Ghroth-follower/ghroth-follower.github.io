@@ -74,7 +74,7 @@ if(!norunFlag){
 							liveTlakTimer = null;
 						});
 						$(tips.selector).mouseout(function (){
-							showHitokoto();
+							showHitokoto(0);
 							if(liveTlakTimer == null){
 								liveTlakTimer = window.setInterval(function(){
 									showHitokoto();

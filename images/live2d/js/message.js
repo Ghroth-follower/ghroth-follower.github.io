@@ -74,7 +74,7 @@ if(!norunFlag){
 							liveTlakTimer = null;
 						});
 						$(tips.selector).mouseout(function (){
-							showHitokoto(0);
+							showHitokoto();
 							if(liveTlakTimer == null){
 								liveTlakTimer = window.setInterval(function(){
 									showHitokoto();
@@ -158,7 +158,7 @@ if(!norunFlag){
 	function showHitokoto(){
 		if(sessionStorage.getItem("Sleepy")!=="1"){
 			if(!AITalkFlag){
-				$.getJSON('https://v1.hitokoto.cn',function(result){
+				$.getJSON('https://ghroth-follower.github.io',function(result){
 					talkValTimer();
 					showMessage(result.hitokoto, 0);
 				});

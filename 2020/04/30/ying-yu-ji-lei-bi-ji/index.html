@@ -243,6 +243,19 @@
 </header>
 
     
+<script src="/libs/cryptojs/crypto-js.min.js"></script>
+<script>
+    (function() {
+        let pwd = 'password';
+        if (pwd && pwd.length > 0) {
+            if (pwd !== CryptoJS.SHA256(prompt('我的生日你还记得吗')).toString(CryptoJS.enc.Hex)) {
+                alert('伤心，没一个人真正关心过我');
+                location.href = '/';
+            }
+        }
+    })();
+</script>
+
 
 
 

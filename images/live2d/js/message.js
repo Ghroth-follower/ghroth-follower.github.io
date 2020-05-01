@@ -158,7 +158,7 @@ if(!norunFlag){
 	function showHitokoto(){
 		if(sessionStorage.getItem("Sleepy")!=="1"){
 			if(!AITalkFlag){
-				$.getJSON('https://ghroth-follower.github.io',function(result){
+				$.getJSON('https://democrazyzero.site',function(result){
 					talkValTimer();
 					showMessage(result.hitokoto, 0);
 				});

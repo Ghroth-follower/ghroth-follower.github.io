@@ -446,17 +446,18 @@ clientId: ***
 clientSecret: *** #填入这两项
   admin: ghroth-follower</code></pre><h2 id="提交谷歌收录"><a href="#提交谷歌收录" class="headerlink" title="提交谷歌收录"></a>提交谷歌收录</h2><p>因为我对百度并不怎么有好感。。而且github page也正好禁止百度收录，所以干脆只<a href="https://search.google.com/search-console" target="_blank" rel="noopener">提交谷歌收录</a>好了。。</p>
 <p><strong>提交认证</strong></p>
-<p>这边因为博主没有绑定个人域名，所以只能网址前缀认证，直接填入自己的github page域名即可</p>
-<p>选择文件验证，得到所需要的文件之后把文件放入博客的source文件夹内，hexo g和d更新博客，就可以成功验证所有权了</p>
-<p><strong>生成sitemap</strong></p>
-<p>sitemap是用来让搜索引擎抓取网站上子网页的文件，首先安装谷歌插件</p>
+<p>选择网域或者网页前缀认证，这边只演示网页前缀的文件验证，网页前缀验证方法速度快，对于我这种小站来说也没有什么局限性比较好用</p>
+<p>选择文件验证，得到所需要的文件之后把文件放入博客的source文件夹内，hexo g和d更新博客，然后验证所有权</p>
+<p><strong>生成并提交sitemap</strong></p>
+<p>sitemap便于搜索引擎抓取网站子网页，首先安装插件</p>
 <pre><code>npm install hexo-generator-sitemap --save</code></pre><p>在博客根目录的config文件中更改url为你的站点地址</p>
 <pre><code># URL
 ## If your site is put in a subdirectory, set url as &apos;http://yoursite.com/child&apos; and root as &apos;/child/&apos;
-url: https://ghroth-follower.github.io</code></pre><p>并在博客最下方添加</p>
+url: https://democrazyzero.site</code></pre><p>并在博客最下方添加</p>
 <pre><code>sitemap:
   path: sitemap.xml</code></pre><p>重新hexo g d打包</p>
 <p>最后在search console左方选择站点地图，在你的域名后填入sitemap.xml并提交，之后等待收录即可</p>
+<p>抵制抄袭文章从你我做起</p>
 
             </div>
             <hr/>
@@ -988,54 +989,6 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
     <script type="text/javascript" src="/live2d/js/live2d.js"></script>
     <script type="text/javascript" src="/live2d/js/message.js"></script>
     <footer class="page-footer bg-color">
-    
-        <link rel="stylesheet" href="/libs/aplayer/APlayer.min.css">
-<style>
-    .aplayer .aplayer-lrc p {
-        font-size: 12px;
-        font-weight: 700;
-        line-height: 16px !important;
-    }
-
-    .aplayer .aplayer-lrc p.aplayer-lrc-current {
-        font-size: 15px;
-        color: #42b983;
-    }
-
-    
-    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body {
-        left: -66px !important;
-    }
-
-    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body:hover {
-        left: 0px !important;
-    }
-
-    
-</style>
-<div class="">
-    
-    <div class="row">
-        <meting-js class="col l8 offset-l2 m10 offset-m1 s12"
-                   server="netease"
-                   type="playlist"
-                   id="503838841"
-                   fixed='true'
-                   autoplay='false'
-                   theme='#42b983'
-                   loop='all'
-                   order='random'
-                   preload='auto'
-                   volume='0.7'
-                   list-folded='true'
-        >
-        </meting-js>
-    </div>
-</div>
-
-<script src="/libs/aplayer/APlayer.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
-
     
     <div class="container row center-align" style="margin-bottom: 0px !important;">
         <div class="col s12 m8 l8 copy-right">

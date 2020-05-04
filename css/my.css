@@ -67,3 +67,7 @@ canvas {
   width: auto;
   z-index: -1;
 }
+
+body {
+    cursor: url(/cur/Arrow.cur),auto;
+}

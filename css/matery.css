@@ -34,9 +34,12 @@
 }
 
 body {
-    background-color: #eaeaea;
-    margin: 0;
-    color: #34495e;
+    background-image: /medias/featureimages/3.jpg
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+    background-position:center;
+    background-size: cover;
+    margin:0 auto;
 }
 
 h1 {
@@ -2138,3 +2141,23 @@ footer .copy-right {
     margin: 0px;
 }
 
+.bg-covers {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    padding: 0;
+    border: 0;
+    overflow: hidden;
+    background-position: center center;
+    background-size: 100%;
+    transform: translate3d(0px, 0px, 0px);
+    width:210vh; 
+    height:100vh;
+}
+
+.post-cover {
+    height: 40vh !important;
+
+.post-cover {
+    height: 100vh !important;
+}

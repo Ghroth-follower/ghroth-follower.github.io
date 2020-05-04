@@ -69,5 +69,8 @@ canvas {
 }
 
 body {
-    cursor: url(/cur/Arrow.cur),auto;
+    cursor: url(/cur/normal.cur),auto;
 }
+:active {
+      cursor: url(/cur/normal.cur),auto!important
+  }

@@ -68,9 +68,9 @@ canvas {
   z-index: -1;
 }
 
-body {
+ body {
     cursor: url(/cur/normal.cur),auto;
 }
 :active {
       cursor: url(/cur/normal.cur),auto!important
-  }
+  } 

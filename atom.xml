@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://democrazyzero.site/"/>
-  <updated>2020-05-03T09:48:51.503Z</updated>
+  <updated>2020-05-17T08:01:52.700Z</updated>
   <id>https://democrazyzero.site/</id>
   
   <author>
@@ -15,6 +15,35 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>matery个性修改与深度优化(二)</title>
+    <link href="https://democrazyzero.site/matery-ge-xing-xiu-gai-yu-shen-du-you-hua.html"/>
+    <id>https://democrazyzero.site/matery-ge-xing-xiu-gai-yu-shen-du-you-hua.html</id>
+    <published>2020-05-17T06:27:26.000Z</published>
+    <updated>2020-05-17T08:01:52.700Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;做了一些基本的修改以后博客可以正常运作了&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;但是!&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;github和fastly合作节点的访问速度真的是不堪入目，特别是matery这种花里胡哨的主题，高丢包高延迟让博客加载几分钟也不一定能刷的出来页面&lt;br&gt;。这时
+        
+      
+    
+    </summary>
+    
+    
+      <category term="web" scheme="https://democrazyzero.site/categories/web/"/>
+    
+    
+      <category term="hexo" scheme="https://democrazyzero.site/tags/hexo/"/>
+    
+  </entry>
   
   <entry>
     <title>对互联网的一些看法</title>

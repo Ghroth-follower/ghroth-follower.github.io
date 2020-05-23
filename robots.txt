@@ -9,4 +9,6 @@ Disallow: /js/
 Disallow: /css/
 Disallow: /fonts/
 Disallow: /vendors/
+Disallow: /pace/
+Disallow: /live2d/
 ```

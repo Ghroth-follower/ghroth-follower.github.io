@@ -144,12 +144,35 @@
   
   <li class="hide-on-med-and-down nav-item">
     
-    <a href="/about" class="waves-effect waves-light">
+    <a href="" class="waves-effect waves-light">
+
       
       <i class="fas fa-user-circle" style="zoom: 0.6;"></i>
       
       <span>关于</span>
+      <i class="fas fa-chevron-down" aria-hidden="true" style="zoom: 0.6;"></i>
     </a>
+    <ul class="sub-nav menus_item_child ">
+      
+      <li>
+        <a href="/me">
+          
+          <i class="fas fa-question" style="margin-top: -20px; zoom: 0.6;"></i>
+          
+          <span>Q&A</span>
+        </a>
+      </li>
+      
+      <li>
+        <a href="/about">
+          
+          <i class="fas fa-user-circle" style="margin-top: -20px; zoom: 0.6;"></i>
+          
+          <span>我</span>
+        </a>
+      </li>
+      
+    </ul>
     
   </li>
   
@@ -292,12 +315,36 @@
         
         <li class="m-nav-item">
 	  
-		<a href="/about" class="waves-effect waves-light">
+		<a href="javascript:;">
 			
-			    <i class="fa-fw fas fa-user-circle"></i>
+				<i class="fa-fw fas fa-user-circle"></i>
 			
 			关于
+			<span class="m-icon"><i class="fas fa-chevron-right"></i></span>
 		</a>
+            <ul  style="background:  ;" >
+              
+                <li>
+
+                  <a href="/me " style="margin-left:75px">
+				  
+				   <i class="fa fas fa-question" style="position: absolute;left:50px" ></i>
+			      
+		          <span>Q&A</span>
+                  </a>
+                </li>
+              
+                <li>
+
+                  <a href="/about " style="margin-left:75px">
+				  
+				   <i class="fa fas fa-user-circle" style="position: absolute;left:50px" ></i>
+			      
+		          <span>我</span>
+                  </a>
+                </li>
+              
+            </ul>
           
         </li>
         
@@ -549,8 +596,8 @@ animation: rainbow 60s infinite;*/
 <h2 id="头像-页面角标的更改与制作"><a href="#头像-页面角标的更改与制作" class="headerlink" title="头像,页面角标的更改与制作"></a>头像,页面角标的更改与制作</h2><p><em>\themes\hexo-theme-matery\source\</em>中替换favicon.png</p>
 <p><em>\themes\hexo-theme-matery\source\medias</em>中替换avatar.jpg与logo.png</p>
 <p><em>logo制作没有工具的话可以使用</em><a href="http://www.uugai.com/" target="_blank" rel="noopener">此处在线制作</a></p>
-<h2 id="gitalk-留言板-的安装"><a href="#gitalk-留言板-的安装" class="headerlink" title="gitalk(留言板)的安装"></a>gitalk(留言板)的安装</h2><p>matery主题是内置gitalk之类的很多留言插件的，我们在启用内置之前首先要做好前置准备，<strong>这里博主示例安装的是gitalk</strong></p>
-<p>首先<a href="https://github.com/settings/applications/new" target="_blank" rel="noopener">申请一个Github APP</a></p>
+<h2 id="留言板的安装"><a href="#留言板的安装" class="headerlink" title="留言板的安装"></a>留言板的安装</h2><p>二选一</p>
+<h3 id="gitalk"><a href="#gitalk" class="headerlink" title="gitalk"></a>gitalk</h3><p>首先<a href="https://github.com/settings/applications/new" target="_blank" rel="noopener">申请一个Github APP</a></p>
 <p>这边要注意Homepage URL和Authorization callback URL一定要填写自己博客的域名，<strong>必须有http前缀，其他的可以随意</strong></p>
 <p>申请到之后记录下Client ID与Client Secret，得到之后在 <em>\themes\hexo-theme-matery_config.yml</em> 中搜索gitalk，填入client id与secret并启用</p>
 <pre><code>  enable: ture
@@ -559,12 +606,13 @@ animation: rainbow 60s infinite;*/
   oauth:
 clientId: *** 
 clientSecret: *** #填入这两项
-  admin: *</code></pre><h2 id="提交谷歌收录"><a href="#提交谷歌收录" class="headerlink" title="提交谷歌收录"></a>提交谷歌收录</h2><p>因为我对百度并不怎么有好感。。而且github page也正好禁止百度收录，所以干脆只<a href="https://search.google.com/search-console" target="_blank" rel="noopener">提交谷歌收录</a>好了。。</p>
-<p><strong>提交认证</strong></p>
-<p>选择网域或者网页前缀认证，这边只演示网页前缀的文件验证，网页前缀验证方法速度快，对于我这种小站来说也没有什么局限性比较好用</p>
-<p>选择文件验证，得到所需要的文件之后把文件放入博客的source文件夹内，hexo g和d更新博客，然后验证所有权</p>
+  admin: *</code></pre><h3 id="valine"><a href="#valine" class="headerlink" title="valine"></a>valine</h3><p><a href="https://us.leancloud.cn/login.html#/signin" target="_blank" rel="noopener">注册leancloud</a></p>
+<p>创建一个应用，在存储中新建class:Comment<br>在设置-应用keys中得到自己需要的key，填入主题的config中并启用</p>
+<h2 id="提交谷歌收录"><a href="#提交谷歌收录" class="headerlink" title="提交谷歌收录"></a>提交谷歌收录</h2><p><strong>提交认证</strong></p>
+<p>选择网域或者网页前缀认证，这边只演示网页前缀的文件验证，网页前缀验证方法速度更快</p>
+<p>选择网址前缀的文件验证，得到所需要的文件之后把文件放入博客的source文件夹内，hexo g和d更新博客，然后验证所有权</p>
 <p><strong>生成并提交sitemap</strong></p>
-<p>sitemap便于搜索引擎抓取网站子网页，首先安装插件</p>
+<p>首先安装插件</p>
 <pre><code>npm install hexo-generator-sitemap --save</code></pre><p>在博客根目录的config文件中更改url为你的站点地址</p>
 <pre><code># URL
 ## If your site is put in a subdirectory, set url as &apos;http://yoursite.com/child&apos; and root as &apos;/child/&apos;
@@ -572,7 +620,82 @@ url: https://democrazyzero.site</code></pre><p>并在博客最下方添加</p>
 <pre><code>sitemap:
   path: sitemap.xml</code></pre><p>重新hexo g d打包</p>
 <p>最后在search console左方选择站点地图，在你的域名后填入sitemap.xml并提交，之后等待收录即可</p>
-<p>抵制抄袭文章从你我做起</p>
+<h2 id="数字雨特效"><a href="#数字雨特效" class="headerlink" title="数字雨特效"></a>数字雨特效</h2><p>在主题文件夹的source/js中新建DigitalRain.js并写入</p>
+<pre><code>window.onload = function(){
+//获取画布对象
+var canvas = document.getElementById(&quot;canvas&quot;);
+//获取画布的上下文
+var context =canvas.getContext(&quot;2d&quot;);
+var s = window.screen;
+var W = canvas.width = s.width;
+var H = canvas.height;
+//获取浏览器屏幕的宽度和高度
+//var W = window.innerWidth;
+//var H = window.innerHeight;
+//设置canvas的宽度和高度
+canvas.width = W;
+canvas.height = H;
+//每个文字的字体大小
+var fontSize = 12;
+//计算列
+var colunms = Math.floor(W /fontSize);  
+//记录每列文字的y轴坐标
+var drops = [];
+//给每一个文字初始化一个起始点的位置
+for(var i=0;i&lt;colunms;i++){
+drops.push(0);
+}
+//运动的文字
+var str =&quot;WELCOME TO WWW.ITRHX.COM&quot;;
+//4:fillText(str,x,y);原理就是去更改y的坐标位置
+//绘画的函数
+function draw(){
+context.fillStyle = &quot;rgba(238,238,238,.08)&quot;;//遮盖层
+context.fillRect(0,0,W,H);
+//给字体设置样式
+context.font = &quot;600 &quot;+fontSize+&quot;px  Georgia&quot;;
+//给字体添加颜色
+context.fillStyle = [&quot;#33B5E5&quot;, &quot;#0099CC&quot;, &quot;#AA66CC&quot;, &quot;#9933CC&quot;, &quot;#99CC00&quot;, &quot;#669900&quot;, &quot;#FFBB33&quot;, &quot;#FF8800&quot;, &quot;#FF4444&quot;, &quot;#CC0000&quot;][parseInt(Math.random() * 10)];//randColor();可以rgb,hsl, 标准色，十六进制颜色
+//写入画布中
+for(var i=0;i&lt;colunms;i++){
+var index = Math.floor(Math.random() * str.length);
+var x = i*fontSize;
+var y = drops[i] *fontSize;
+context.fillText(str[index],x,y);
+//如果要改变时间，肯定就是改变每次他的起点
+if(y &gt;= canvas.height &amp;&amp; Math.random() &gt; 0.99){
+drops[i] = 0;
+}
+drops[i]++;
+}
+};
+function randColor(){//随机颜色
+var r = Math.floor(Math.random() * 256);
+var g = Math.floor(Math.random() * 256);
+var b = Math.floor(Math.random() * 256);
+return &quot;rgb(&quot;+r+&quot;,&quot;+g+&quot;,&quot;+b+&quot;)&quot;;
+}
+draw();
+setInterval(draw,35);
+};</code></pre><p>在source/css文件夹的my.css中添加</p>
+<pre><code>canvas {
+  position: fixed;
+  right: 0px;
+  bottom: 0px;
+  min-width: 100%;
+  min-height: 100%;
+  height: auto;
+  width: auto;
+  z-index: -1;
+}</code></pre><p>在layout文件夹中的layout.ejs中加入</p>
+<pre><code>&lt;!-- 数字雨 --&gt;
+  &lt;canvas id=&quot;canvas&quot; width=&quot;1440&quot; height=&quot;900&quot; &gt;&lt;/canvas&gt;
+  &lt;script type=&quot;text/javascript&quot; src=&quot;/js/DigitalRain.js&quot;&gt;&lt;/script&gt;</code></pre><p><strong>数字雨会与归档图表冲突，看不惯可以不采用或者在主题config中关闭归档图表</strong></p>
+<h2 id="添加加载条"><a href="#添加加载条" class="headerlink" title="添加加载条"></a>添加加载条</h2><p><a href="https://github.hubspot.com/pace/docs/welcome/" target="_blank" rel="noopener">下载pace加载条</a></p>
+<p>将下载的pace文件放入hexo文件夹的source中<br>在主题文件夹的\layout_partial中打开head.ejs，在head中插入以下代码</p>
+<pre><code>&lt;script src=&quot;/pace/pace.js&quot;&gt;&lt;/script&gt;
+  &lt;link href=&quot;/pace/themes/加载条名称.css&quot; rel=&quot;stylesheet&quot; /&gt;</code></pre><p>另外不要忘记在robot.txt中添加</p>
+<pre><code>Disallow: /pace/</code></pre><p>防止爬虫抓取降低网站平均权重</p>
 
             </div>
             <hr/>

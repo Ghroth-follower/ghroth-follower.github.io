@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://democrazyzero.site/"/>
-  <updated>2020-05-17T08:01:52.700Z</updated>
+  <updated>2020-05-24T08:45:32.174Z</updated>
   <id>https://democrazyzero.site/</id>
   
   <author>
@@ -15,6 +15,34 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>解锁DOOM ETERNAL(永恒)控制台的作弊指令</title>
+    <link href="https://democrazyzero.site/doom-eternal-zuo-bi-kong-zhi-tai.html"/>
+    <id>https://democrazyzero.site/doom-eternal-zuo-bi-kong-zhi-tai.html</id>
+    <published>2020-05-24T07:24:27.000Z</published>
+    <updated>2020-05-24T08:45:32.174Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;我们在游戏中可以按下键盘左上角的~键打开控制台，但是官方为了游戏的平衡性已经把作弊指令进行了移除(大概吧)&lt;br&gt;不过有一个好消息&lt;br&gt;&lt;strong&gt;sunbeam的doom永恒CT可以让我们启用作弊指令&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;在此先贴上sunbeam的原贴链
+        
+      
+    
+    </summary>
+    
+    
+      <category term="游戏" scheme="https://democrazyzero.site/categories/%E6%B8%B8%E6%88%8F/"/>
+    
+    
+      <category term="DOOM永恒" scheme="https://democrazyzero.site/tags/DOOM%E6%B0%B8%E6%81%92/"/>
+    
+  </entry>
   
   <entry>
     <title>matery个性修改与深度优化(二)</title>
@@ -137,7 +165,7 @@
     <link href="https://democrazyzero.site/hexo-jian-zhan-guo-cheng-yu-xi-jie.html"/>
     <id>https://democrazyzero.site/hexo-jian-zhan-guo-cheng-yu-xi-jie.html</id>
     <published>2020-04-30T05:32:47.000Z</published>
-    <updated>2020-05-06T05:14:44.602Z</updated>
+    <updated>2020-05-24T08:19:56.111Z</updated>
     
     <summary type="html">
     

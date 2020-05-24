@@ -7,7 +7,7 @@
     <link rel="stylesheet" type="text/css" href="/css/loading.css">
     <link  rel="stylesheet" href="/live2d/css/live2d.css"  />
     <meta charset="utf-8">
-    <meta name="keywords" content="WG.ST">
+    <meta name="keywords" content="me, WG.ST">
     <meta name="description" content="格赫罗斯表达了我对物质宇宙的向往与恐惧">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -19,7 +19,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>WG.ST</title>
+    <title>me | WG.ST</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -426,7 +426,7 @@
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title"></h1>
+                    <h1 class="description center-align post-title">me</h1>
                 </div>
             </div>
         </div>
@@ -555,7 +555,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2020-05-03
+                    2020-05-24
                 </div>
                 
 
@@ -571,114 +571,15 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="pace"><a href="#pace" class="headerlink" title="pace"></a>pace</h1><p>Include <a href="https://raw.github.com/HubSpot/pace/v0.5.3/pace.min.js" target="_blank" rel="noopener">pace.js</a> and the<br><a href="http://github.hubspot.com/pace/docs/welcome/" target="_blank" rel="noopener">theme</a> css of your choice on your page<br>(as early as is possible), and you’re done!</p>
-<p>Pace will automatically monitor your ajax requests, event loop lag, document<br>ready state, and elements on your page to decide the progress.  On ajax navigation<br>it will begin again!</p>
-<p>If you use AMD or Browserify, require in pace.js and call <code>pace.start()</code> as early in<br>the loading process as is possible.</p>
-<h2 id="Install-with-Eager"><a href="#Install-with-Eager" class="headerlink" title="Install with Eager"></a>Install with Eager</h2><p>The easiest way to add Pace to your site is with <a href="http://eager.io" target="_blank" rel="noopener">Eager</a>.<br>Click Install to see a live preview of Pace on your website.</p>
-<iframe style="height: 48px; width: 180px" src="//install.eager.io?appId=kYKTiQjoVjQk" allowtransparency="true" scroll="no" frameBorder="0"></iframe>
-
-<h2 id="Example"><a href="#Example" class="headerlink" title="Example"></a>Example</h2><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"/pace/pace.js"</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">link</span> <span class="attr">href</span>=<span class="string">"/pace/themes/pace-theme-barber-shop.css"</span> <span class="attr">rel</span>=<span class="string">"stylesheet"</span> /&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<h2 id="Configuration"><a href="#Configuration" class="headerlink" title="Configuration"></a>Configuration</h2><p>Pace is fully automatic, no configuration is necessary to get started.</p>
-<p>If you would like to make some tweaks, here’s how:</p>
-<p>You can set <code>window.paceOptions</code> before bringing in the file:</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">paceOptions = &#123;</span><br><span class="line">  <span class="comment">// Disable the 'elements' source</span></span><br><span class="line">  elements: <span class="literal">false</span>,</span><br><span class="line"></span><br><span class="line">  <span class="comment">// Only show the progress on regular and ajax-y page navigation,</span></span><br><span class="line">  <span class="comment">// not every request</span></span><br><span class="line">  restartOnRequestAfter: <span class="literal">false</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>You can also put options on the script tag:</p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">data-pace-options</span>=<span class="string">'&#123; "ajax": false &#125;'</span> <span class="attr">src</span>=<span class="string">'pace.js'</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<p>If you’re using AMD or Browserify, you can pass your options to <code>start</code>:</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">define([<span class="string">'pace'</span>], <span class="function"><span class="keyword">function</span>(<span class="params">pace</span>)</span>&#123;</span><br><span class="line">  pace.start(&#123;</span><br><span class="line">    <span class="built_in">document</span>: <span class="literal">false</span></span><br><span class="line">  &#125;);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
-
-<h2 id="Themes"><a href="#Themes" class="headerlink" title="Themes"></a>Themes</h2><p>Pace includes a bunch of <a href="http://github.hubspot.com/pace/docs/welcome/" target="_blank" rel="noopener">themes</a><br>to get you started.  Just include the appropriate css file.  Send us a PR with<br>any interesting themes you create.</p>
-<h2 id="Collectors"><a href="#Collectors" class="headerlink" title="Collectors"></a>Collectors</h2><p>Collectors are the bits of code which gather progress information.  Pace includes four default collectors:</p>
-<ul>
-<li><p>Ajax</p>
-<p>Monitors all ajax requests on the page</p>
-</li>
-<li><p>Elements</p>
-<p>Checks for the existance of specific elements on the page</p>
-</li>
-<li><p>Document</p>
-<p>Checks the document readyState</p>
-</li>
-<li><p>Event Lag</p>
-<p>Checks for event loop lag signaling that javascript is being executed</p>
-</li>
-</ul>
-<p>They can each be configured or disabled through configuration options of the same name.</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">paceOptions = &#123;</span><br><span class="line">  ajax: <span class="literal">false</span>, <span class="comment">// disabled</span></span><br><span class="line">  <span class="built_in">document</span>: <span class="literal">false</span>, <span class="comment">// disabled</span></span><br><span class="line">  eventLag: <span class="literal">false</span>, <span class="comment">// disabled</span></span><br><span class="line">  elements: &#123;</span><br><span class="line">    selectors: [<span class="string">'.my-page'</span>]</span><br><span class="line">  &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
-
-<p>Add your own classes to <code>paceOptions.extraSources</code> to add more sources.  Each source should either<br>have a <code>.progress</code> property, or a <code>.elements</code> property which is a list of objects with<br><code>.progress</code> properties.  Pace will automatically handle all scaling to make the progress<br>changes look smooth to the user.</p>
-<h2 id="Elements"><a href="#Elements" class="headerlink" title="Elements"></a>Elements</h2><p>Elements being rendered to the screen is one way for us to decide that the page has been<br>rendered.  If you would like to use that source of information (not required at all),<br>specify one or more selectors.  You can comma seperate the selectors to propertly handle<br>error states, where the progress bar should disappear, but the element we are looking for<br>may never appear:</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">paceOptions = &#123;</span><br><span class="line">  elements: &#123;</span><br><span class="line">    selectors: [<span class="string">'.timeline,.timeline-error'</span>, <span class="string">'.user-profile,.profile-error'</span>]</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>Pace will consider the elements test successful when each selector matches something.  For<br>this example, when either <code>.timeline</code> or <code>.timeline-error</code> exist, and either <code>.user-profile</code><br>or <code>.profile-error</code> exist.</p>
-<h2 id="Restart-Rules"><a href="#Restart-Rules" class="headerlink" title="Restart Rules"></a>Restart Rules</h2><p>Most users want the progress bar to automatically restart when a pushState event occurs<br>(generally means ajax navigation is occuring).  You can disable this:</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">paceOptions = &#123;</span><br><span class="line">  restartOnPushState: <span class="literal">false</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>You can also have pace restart on every ajax request which lasts longer than x ms.  You’ll want to<br>disable this if you make ajax requests the user doesn’t need to know about, like precaching:</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">paceOptions = &#123;</span><br><span class="line">  restartOnRequestAfter: <span class="literal">false</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>You can always trigger a restart manually by calling <code>Pace.restart()</code></p>
-<p>See <a href="https://github.com/HubSpot/pace/blob/master/pace.coffee" target="_blank" rel="noopener">the source</a> for a full list of all options.</p>
-<h2 id="API"><a href="#API" class="headerlink" title="API"></a>API</h2><p>Pace exposes the following methods:</p>
-<ul>
-<li><p><code>Pace.start</code>: Show the progress bar and start updating.  Called automatically if you don’t use AMD or CommonJS.</p>
-</li>
-<li><p><code>Pace.restart</code>: Show the progress bar if it’s hidden and start reporting the progress from scratch.  Called automatically<br>whenever <code>pushState</code> or <code>replaceState</code> is called by default.</p>
-</li>
-<li><p><code>Pace.stop</code>: Hide the progress bar and stop updating it.</p>
-</li>
-<li><p><code>Pace.track</code>: Explicitly track one or more requests, see Tracking below</p>
-</li>
-<li><p><code>Pace.ignore</code>: Expliticly ignore one or more requests, see Tracking below</p>
-</li>
-</ul>
-<h2 id="Events"><a href="#Events" class="headerlink" title="Events"></a>Events</h2><p>Pace fires the following events:</p>
-<ul>
-<li><code>start</code>: When pace is initially started, or as a part of a restart</li>
-<li><code>stop</code>: When pace is manually stopped, or as a part of a restart</li>
-<li><code>restart</code>: When pace is restarted (manually, or by a new AJAX request)</li>
-<li><code>done</code>: When pace is finished</li>
-<li><code>hide</code>: When the pace is hidden (can be later than <code>done</code>, based on <code>ghostTime</code> and <code>minTime</code>)</li>
-</ul>
-<p>You can bind onto events using the <code>on</code>, <code>off</code> and <code>once</code> methods:</p>
-<ul>
-<li><code>Pace.on(event, handler, [context])</code>: Call <code>handler</code> (optionally with context) when <code>event</code> is triggered</li>
-<li><code>Pace.off(event, [handler])</code>: Unbind the provided <code>event</code> and <code>handler</code> combination.</li>
-<li><code>Pace.once(event, handler, [context])</code>: Bind <code>handler</code> to the next (and only the next) incidence of <code>event</code></li>
-</ul>
-<h2 id="Tracking"><a href="#Tracking" class="headerlink" title="Tracking"></a>Tracking</h2><p>By default, Pace will show any ajax requests which begin as a part of a normal or ajax-y page load, or which last longer than<br>500ms.</p>
-<p>You can disable all ajax tracking by setting <code>ajax</code> to false:</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Pace.options = &#123;</span><br><span class="line">  ajax: <span class="literal">false</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>You can disable ajax tracking except on page navigation by setting <code>restartOnRequestAfter</code> to false:</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Pace.options = &#123;</span><br><span class="line">  restartOnRequestAfter: <span class="literal">false</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>You can manually disable tracking for a specific request or requests by triggering them within a <code>Pace.ignore</code> callback:</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Pace.ignore(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">  $.ajax(...)</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
-
-<p>You can force the progress bar to be shown for a specific request by triggering them within a <code>Pace.track</code> callback:</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Pace.track(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">  $.ajax(...)</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
-
-<p>You can also ignore URLs based on a pattern:</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">Pace.options = &#123;</span><br><span class="line">  ajax: &#123;</span><br><span class="line">    ignoreURLs: [<span class="string">'some-substring'</span>, /some-regexp/]</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h2 id="Dependencies"><a href="#Dependencies" class="headerlink" title="Dependencies"></a>Dependencies</h2><p>None!</p>
-<h2 id="Support"><a href="#Support" class="headerlink" title="Support"></a>Support</h2><p>Pace is designed to support IE8+ (standards mode), FF 3.5+, Chrome, Safari 4+, Opera 10.5+, and all modern<br>mobile browsers.  If you run into a compatibility issue, or can make a case for supporting something else,<br>please create an issue.</p>
-<h2 id="Size"><a href="#Size" class="headerlink" title="Size"></a>Size</h2><p>pace.js is 4kb minified and gzipped.  The themes vary between 0.5 and 4kb.</p>
-<h2 id="Issues"><a href="#Issues" class="headerlink" title="Issues"></a>Issues</h2><p>We have obviously not tested this on every website.  If you run into an issue, or find a way the automatic<br>detection could be better, please <a href="https://github.com/HubSpot/pace/issues/new" target="_blank" rel="noopener">create an Issue</a>.  If you can include a test case, that’s even better.</p>
-<h2 id="Contributing"><a href="#Contributing" class="headerlink" title="Contributing"></a>Contributing</h2><p>PRs Welcome!</p>
-<p>Building requires node.js.</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">npm install</span><br><span class="line">grunt</span><br></pre></td></tr></table></figure>
-
-<p>You can also run <code>grunt watch</code> to have it automatically build as you make changes.</p>
-<p>There is no need to include compiled files in PRs.</p>
-<h2 id="Credits"><a href="#Credits" class="headerlink" title="Credits"></a>Credits</h2><p><a href="http://dev.hubspot.com" target="_blank" rel="noopener">HubSpot</a></p>
-<p>Javascript by <a href="http://twitter.com/zackbloom" target="_blank" rel="noopener">Zack Bloom</a><br>CSS by <a href="http://twitter.com/adamfschwartz" target="_blank" rel="noopener">Adam Schwartz</a></p>
-<p>Themes inspired by <a href="http://tympanus.net/codrops/2013/09/18/creative-loading-effects/" target="_blank" rel="noopener">Mary Lou</a></p>
-<p>Project inspired by <a href="http://ricostacruz.com/nprogress/" target="_blank" rel="noopener">nprogress</a></p>
+                <p>这里总结一些Q&amp;A</p>
+<p>Q:建立这个博客是用来做什么的?<br>A:记录，另外<strong>我除周末外是不会在SNS(包括推特与QQ)上线的，但是如果找我有事在博客留言我会在第一时间回应</strong>.</p>
+<p>Q:这个网站需要多少钱(运营)?<br>A:算上域名与CDN费用大概一年十几二十块钱吧.</p>
+<p>Q:搜索功能不能用.<br>A:因为搜索功能太过强大(可以无视密码搜索),所以暂时删除.</p>
+<p>Q:你是程序员吗?<br>A:不是，我只是一个善于使用百度与谷歌的普通人.</p>
+<p>Q:你的github账户叫?<br>A:隐私问题不予透露.</p>
+<p>Q:你会一直更新这个博客吗?<br>A:我不知道，目前的计划是如果没有特殊情况每周更新一篇(保持网站活跃利于seo)，把一些自己的(原创)东西都写完之后再看情况.</p>
+<p>Q:可以帮忙建一下XX游戏的游戏服务器吗?<br>A:可以，我会帮忙，毕竟有一台机器闲着，可以让他忙起来我是很乐意的.</p>
+<p>未完待续<br><img src="/images/me.jpg" alt=""><br>你的每一次点击都会为我的网站权重做出不可或缺的贡献</p>
 
             </div>
             <hr/>
@@ -704,7 +605,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://democrazyzero.site/pace/docs/intro.html">https://democrazyzero.site/pace/docs/intro.html</a>
+                    <a href="https://democrazyzero.site/me/index.html">https://democrazyzero.site/me/index.html</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -1048,25 +949,26 @@
                 <i class="far fa-dot-circle"></i>&nbsp;本篇
             </div>
             <div class="card">
-                <a href="/pace/docs/intro.html">
+                <a href="/me/index.html">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="">
+                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="me">
                         
-                        <span class="card-title"></span>
+                        <span class="card-title">me</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            paceInclude pace.js and thetheme css of your choice on your page(as early as is possible), and you’re done!
-Pace will au
+                            这里总结一些Q&amp;A
+Q:建立这个博客是用来做什么的?A:记录，另外我除周末外是不会在SNS(包括推特与QQ)上线的，但是如果找我有事在博客留言我会在第一时间回应.
+Q:这个网站需要多少钱(运营)?A:算上域名与CDN费用大概一年十几
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-05-03
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-05-24
                             </span>
                         <span class="publish-author">
                             
@@ -1087,25 +989,26 @@ Pace will au
                 本篇&nbsp;<i class="far fa-dot-circle"></i>
             </div>
             <div class="card">
-                <a href="/pace/docs/intro.html">
+                <a href="/me/index.html">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="">
+                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="me">
                         
-                        <span class="card-title"></span>
+                        <span class="card-title">me</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            paceInclude pace.js and thetheme css of your choice on your page(as early as is possible), and you’re done!
-Pace will au
+                            这里总结一些Q&amp;A
+Q:建立这个博客是用来做什么的?A:记录，另外我除周末外是不会在SNS(包括推特与QQ)上线的，但是如果找我有事在博客留言我会在第一时间回应.
+Q:这个网站需要多少钱(运营)?A:算上域名与CDN费用大概一年十几
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-05-03
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-05-24
                             </span>
                         <span class="publish-author">
                             

@@ -7,7 +7,7 @@
     <link rel="stylesheet" type="text/css" href="/css/loading.css">
     <link  rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Ghroth-follower/ghroth-follower.github.io/live2d/css/live2d.css"  />
     <meta charset="utf-8">
-    <meta name="keywords" content="matery个性修改与深度优化(二), WG.ST">
+    <meta name="keywords" content="使用linuxgsm来管理你的游戏服务器, WG.ST">
     <meta name="description" content="格赫罗斯表达了我对物质宇宙的向往与恐惧">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -19,7 +19,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>matery个性修改与深度优化(二) | WG.ST</title>
+    <title>使用linuxgsm来管理你的游戏服务器 | WG.ST</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -421,12 +421,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('https://cdn.jsdelivr.net/gh/Ghroth-follower/ghroth-follower.github.io/medias/featureimages/0.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('https://cdn.jsdelivr.net/gh/Ghroth-follower/ghroth-follower.github.io/images/74090923_p0_master1200.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">matery个性修改与深度优化(二)</h1>
+                    <h1 class="description center-align post-title">使用linuxgsm来管理你的游戏服务器</h1>
                 </div>
             </div>
         </div>
@@ -543,8 +543,8 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/hexo/">
-                                <span class="chip bg-color">hexo</span>
+                            <a href="/tags/%E6%B8%B8%E6%88%8F/">
+                                <span class="chip bg-color">游戏</span>
                             </a>
                         
                     </div>
@@ -555,8 +555,8 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/web/" class="post-category">
-                                web
+                            <a href="/categories/server/" class="post-category">
+                                server
                             </a>
                         
                     </div>
@@ -568,7 +568,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2020-05-17
+                    2020-06-07
                 </div>
                 
 
@@ -584,27 +584,32 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>做了一些基本的修改以后博客可以正常运作了</p>
-<p><strong>但是!</strong></p>
-<p>github和fastly合作节点的访问速度真的是不堪入目，特别是matery这种花里胡哨的主题，高丢包高延迟让博客加载几分钟也不一定能刷的出来页面<br>。这时我们只需要将博客的文件存储在云储存中或者挂个全站的cdn访问速度就可以得到极大的提升</p>
-<p><strong>因为国内严格的审查与备案原因这边只介绍海外cdn</strong></p>
-<p>使用cdn后github page的enforce https会失效，请自己申请或者购买ssl证书，<strong>cdn需要ssl证书中nginx的两项内容</strong>，另外因为源站托管的原因大概是不能全链路https了吧，算了这个不重要</p>
-<h1 id="cdn的选用"><a href="#cdn的选用" class="headerlink" title="cdn的选用"></a>cdn的选用</h1><p>对中国访问友好且我用着还不错的基本有两家</p>
-<p><strong>nodecache</strong>:注册送500g(时常限制1个月，用完或者过期为止)，速度还可以，基础流量计费亚太节点大概0.12刀/g，按小时实时扣费<br><a href="https://console-api.nodecache.com/f?aff=30bW24" target="_blank" rel="noopener">可以点击博主的邀请链接支持一下(</a></p>
-<p><strong>udomain</strong>:香港的一家企业，免费试用，试用限制不清楚，速度还可以就是有的时候配置完cdn会抽掉(国内ip进站都会绕路到北美节点这种)，费用香港0.4港币/g，可以说是非常便宜了，但是注册与支付比较麻烦</p>
-<p>ps1:<strong>udomain账户注册需要申请之后等待工作人员处理</strong>，疫情期间大概两到三天的这样吧</p>
-<p>ps2:nodecache确认已经把被墙ip列入访问与加速黑名单，大概率无法用于套v2ray以及其他用途，<strong>包括google爬虫对网站的抓取!</strong></p>
-<h2 id="静态资源的加速"><a href="#静态资源的加速" class="headerlink" title="静态资源的加速"></a>静态资源的加速</h2><p>因为图片和一些其他东西对cdn流量消耗过于庞大，所以我们可以将这些静态的资源导向站外来减缓cdn压力<br>这边推荐使用<a href="https://www.jsdelivr.com/" target="_blank" rel="noopener">jsdelivr</a></p>
-<p>对于github中任何的资源我们可以直接使用下面格式的进行引用<br>`<br>// load any project hosted on npm</p>
-<p><a href="https://cdn.jsdelivr.net/npm/package@version/file" target="_blank" rel="noopener">https://cdn.jsdelivr.net/npm/package@version/file</a><br>`<br>而且jsdelivr作为一家加速各个op网站静态资源的巨头free cdn，在国内也是有不少节点的<br>测试网址:cdn.jsdelivr.net</p>
-<p><img src="XZ(3PD5%5D(https://cdn.jsdelivr.net/gh/Ghroth-follower/ghroth-follower.github.io/images/YGSSTJB$$K0U22.png" alt=""></p>
-<h2 id="nodecache分地区cname解析解救谷歌搜索爬虫"><a href="#nodecache分地区cname解析解救谷歌搜索爬虫" class="headerlink" title="nodecache分地区cname解析解救谷歌搜索爬虫!"></a>nodecache分地区cname解析解救谷歌搜索爬虫!</h2><p>大概率是nodecache为了防止有人嫖cdn流量用来干什么不好的事情所以把谷歌的ip都列黑名单了，相比与和老板进行交涉还是自己动手的好，我们只需要把域名在境外的解析设置绕开nodecache的cdn就好</p>
-<p>ps:dnspod是腾讯云的解析服务，提供免费与付费解析，这边我们免费版就可以使用境内与境外分区解析无需付费</p>
-<p><img src="https://cdn.jsdelivr.net/gh/Ghroth-follower/ghroth-follower.github.io/images/dns.png" alt=""></p>
-<p>将自己域名的ns服务器首选与复选改为dnspod的服务器，配置好境外境内需要解析的ip与域名等待递归生效即可</p>
-<p>另外dnspod的解析服务好像需要实名认证。。不太清楚，博主是老客户所以一般的认证手续都有办了</p>
-<p>这边境外可以直接a记录到自己的GitHub page ip，也可以像博主一样使用另外的cdn，cloudflare可以通过partner使用cname接入，这边推荐一下cf partner的网站 <a href="https://cdn.bnxb.com/#" target="_blank" rel="noopener">https://cdn.bnxb.com/#</a></p>
-<p>关于访问优化大概就是这样结束了吧。。。以后有什么其他的问题会在这里持续更新</p>
+                <p>一直想总结一下linuxgsm的使用，基本对linux建服有一点了解的都听说过linuxgsm吧，但是找不到一篇关于他的中文说明(大概吧，我没有找到)</p>
+<h2 id="什么是linuxgsm"><a href="#什么是linuxgsm" class="headerlink" title="什么是linuxgsm?"></a>什么是linuxgsm?</h2><p>全称linux game server managers，顾名思义，他的存在是为了帮助我们在Linux端(大多是非图形操作系统)建立并管理服务器用的<br>并且linuxgsm的所有服务端都是完美兼容任何linux以及衍生系统的(暂不支持以wine为桥梁的windows服务端建服)</p>
+<p>服务端的安装都是从steamcmd中获取最新的版本，而且也提供一键更新</p>
+<p>这边贴一下官网 <a href="https://linuxgsm.com/" target="_blank" rel="noopener">https://linuxgsm.com/</a></p>
+<p>当然，我们除了基本的游戏服务器以外也可以建立如teamspeak server之类的实用类服务器(大概吧，我只看到了ts3这一种非游戏服务器)</p>
+<h2 id="该如何使用"><a href="#该如何使用" class="headerlink" title="该如何使用?"></a>该如何使用?</h2><h3 id="下载安装"><a href="#下载安装" class="headerlink" title="下载安装"></a>下载安装</h3><p><a href="https://linuxgsm.com/servers/" target="_blank" rel="noopener">https://linuxgsm.com/servers/</a><br>直接进入上方网址，列举了所有支持的game server</p>
+<p>以centos7为系统的<a href="https://linuxgsm.com/lgsm/csserver/" target="_blank" rel="noopener">counter strike server(CS)</a>搭建为例</p>
+<p>首先在服务器网页的dependencies选项中安装依赖（首次使用linuxgsm)<br>centos7:<br><code>yum install epel-release
+yum install mailx postfix curl wget tar bzip2 gzip unzip python3 binutils bc jq tmux glibc.i686 libstdc++ libstdc++.i686</code></p>
+<p>建立新用户csserver(可设置安全密码，分支用户方便管理且linuxgsm无法在root下运行)</p>
+<pre><code>adduser csserver</code></pre><p>切换到csserver</p>
+<pre><code>su - csserver</code></pre><p>安装linuxgsm与css服务端(全自动，自动登陆anonymous账户无需设置)</p>
+<p><code>wget -O linuxgsm.sh https://linuxgsm.sh &amp;&amp; chmod +x linuxgsm.sh &amp;&amp; bash linuxgsm.sh csserver
+./csserver install</code></p>
+<p><strong>ps:国内vps在下载安装的时候可能会断流(下载中断/安装失败)，请注意反馈文字，在安装失败报错后及时重新尝试安装(多试着装几遍就好了)</strong></p>
+<h3 id="基本使用"><a href="#基本使用" class="headerlink" title="基本使用"></a>基本使用</h3><p>列举指令列表(help)</p>
+<pre><code>./csserver</code></pre><p>运行，中止和重启分别对应</p>
+<p><code>./csserver start
+./csserver stop
+./csserver restart</code></p>
+<p>可以键入下面指令来进入server console</p>
+<pre><code>./csserver console</code></pre><p><strong>ps:退出console需要按下ctrl+b然后按下d来退出，直接使用ctrl+C会中止服务端!</strong></p>
+<p>更新服务端</p>
+<pre><code>./csserver update</code></pre><h2 id="如何配置启动参数"><a href="#如何配置启动参数" class="headerlink" title="如何配置启动参数?"></a>如何配置启动参数?</h2><p>因为linuxgsm的原因，无法直接使用sh带参数来运行服务器，而且运行多个服务器的时候会出现端口冲突，所以我们需要更改位于lgsm/config-lgsm/gameserver的配置文件</p>
+<p>参照_defult.cfg修改目录下的common.cfg(推荐直接使用winscp类的文件管理软件进行编辑，非图形界面我用着太累了。。)</p>
+<p><strong>ps:common.cfg跟服务器的cfg文件是两样不同的东西，请不要混淆编辑</strong></p>
 
             </div>
             <hr/>
@@ -630,7 +635,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://democrazyzero.site/matery-ge-xing-xiu-gai-yu-shen-du-you-hua.html">https://democrazyzero.site/matery-ge-xing-xiu-gai-yu-shen-du-you-hua.html</a>
+                    <a href="https://democrazyzero.site/linuxgsm-de-shi-yong.html">https://democrazyzero.site/linuxgsm-de-shi-yong.html</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -668,8 +673,8 @@
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/hexo/">
-                                    <span class="chip bg-color">hexo</span>
+                                <a href="/tags/%E6%B8%B8%E6%88%8F/">
+                                    <span class="chip bg-color">游戏</span>
                                 </a>
                             
                         </div>
@@ -973,9 +978,59 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
+            <div class="card">
+                <a href="/linuxgsm-de-shi-yong.html">
+                    <div class="card-image">
+                        
+                        <img src="https://cdn.jsdelivr.net/gh/Ghroth-follower/ghroth-follower.github.io/images/74090923_p0_master1200.jpg" class="responsive-img" alt="使用linuxgsm来管理你的游戏服务器">
+                        
+                        <span class="card-title">使用linuxgsm来管理你的游戏服务器</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            使用linuxgsm来对游戏服务器进行统一管理
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-06-07
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/server/" class="post-category">
+                                    server
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/%E6%B8%B8%E6%88%8F/">
+                        <span class="chip bg-color">游戏</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
             <div class="card">
                 <a href="/doom-eternal-zuo-bi-kong-zhi-tai.html">
                     <div class="card-image">
@@ -992,9 +1047,9 @@
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2020-05-24
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-05-24
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
@@ -1012,54 +1067,6 @@
                     
                     <a href="/tags/DOOM%E6%B0%B8%E6%81%92/">
                         <span class="chip bg-color">DOOM永恒</span>
-                    </a>
-                    
-                </div>
-                
-            </div>
-        </div>
-        
-        
-        <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge right-badge text-color">
-                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
-            </div>
-            <div class="card">
-                <a href="/bai-du-shou-lu-zhi-de-ma.html">
-                    <div class="card-image">
-                        
-                        <img src="https://cdn.jsdelivr.net/gh/Ghroth-follower/ghroth-follower.github.io/medias/featureimages/13.jpg" class="responsive-img" alt="对互联网的一些看法">
-                        
-                        <span class="card-title">对互联网的一些看法</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary block-with-text">
-                        
-                            一些吐槽
-                        
-                    </div>
-                    <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-05-03
-                            </span>
-                        <span class="publish-author">
-                            
-                            <i class="fas fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/categories/%E5%90%90%E6%A7%BD/" class="post-category">
-                                    吐槽
-                                </a>
-                            
-                            
-                        </span>
-                    </div>
-                </div>
-                
-                <div class="card-action article-tags">
-                    
-                    <a href="/tags/%E6%9D%82%E9%A1%B9/">
-                        <span class="chip bg-color">杂项</span>
                     </a>
                     
                 </div>

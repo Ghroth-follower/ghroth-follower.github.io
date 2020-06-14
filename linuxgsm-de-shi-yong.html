@@ -40,26 +40,6 @@
 
 <body>
     
-<div id="loading-box">
-    <div class="loading-left-bg"></div>
-    <div class="loading-right-bg"></div>
-    <div class="spinner-box">
-        <div class="configure-border-1">
-            <div class="configure-core"></div>
-        </div>
-        <div class="configure-border-2">
-            <div class="configure-core"></div>
-        </div>
-        <div class="loading-word">加载中...</div>
-    </div>
-</div>
-<script>
-    window.addEventListener('load', function(){
-        document.body.style.overflow = 'auto';
-        document.getElementById('loading-box').classList.add("loaded")
-    }, false)
-</script>
-
 
     <header class="navbar-fixed">
     <nav id="headNav" class="bg-color nav-transparent">
@@ -590,9 +570,8 @@
 <p>这边贴一下官网 <a href="https://linuxgsm.com/" target="_blank" rel="noopener">https://linuxgsm.com/</a></p>
 <p>当然，我们除了基本的游戏服务器以外也可以建立如teamspeak server之类的实用类服务器(大概吧，我只看到了ts3这一种非游戏服务器)</p>
 <h2 id="该如何使用"><a href="#该如何使用" class="headerlink" title="该如何使用?"></a>该如何使用?</h2><h3 id="下载安装"><a href="#下载安装" class="headerlink" title="下载安装"></a>下载安装</h3><p><a href="https://linuxgsm.com/servers/" target="_blank" rel="noopener">https://linuxgsm.com/servers/</a><br>直接进入上方网址，列举了所有支持的game server</p>
-<p>以centos7为系统的<a href="https://linuxgsm.com/lgsm/csserver/" target="_blank" rel="noopener">counter strike server(CS)</a>搭建为例</p>
-<p>首先在服务器网页的dependencies选项中安装依赖（首次使用linuxgsm)<br>centos7:<br><code>yum install epel-release
-yum install mailx postfix curl wget tar bzip2 gzip unzip python3 binutils bc jq tmux glibc.i686 libstdc++ libstdc++.i686</code></p>
+<p>以centos7为系统的<a href="https://linuxgsm.com/lgsm/csserver/" target="_blank" rel="noopener">counter strike server(CSSERVER)</a>搭建为例</p>
+<p>首先在服务器网页的dependencies选项中安装依赖（首次使用linuxgsm)<br>centos7:<br>    yum install epel-release<br>    yum install mailx postfix curl wget tar bzip2 gzip unzip python3 binutils bc jq tmux glibc.i686 libstdc++ libstdc++.i686</p>
 <p>建立新用户csserver(可设置安全密码，分支用户方便管理且linuxgsm无法在root下运行)</p>
 <pre><code>adduser csserver</code></pre><p>切换到csserver</p>
 <pre><code>su - csserver</code></pre><p>安装linuxgsm与css服务端(全自动，自动登陆anonymous账户无需设置)</p>
@@ -601,15 +580,15 @@ yum install mailx postfix curl wget tar bzip2 gzip unzip python3 binutils bc jq 
 <p><strong>ps:国内vps在下载安装的时候可能会断流(下载中断/安装失败)，请注意反馈文字，在安装失败报错后及时重新尝试安装(多试着装几遍就好了)</strong></p>
 <h3 id="基本使用"><a href="#基本使用" class="headerlink" title="基本使用"></a>基本使用</h3><p>列举指令列表(help)</p>
 <pre><code>./csserver</code></pre><p>运行，中止和重启分别对应</p>
-<p><code>./csserver start
+<pre><code>./csserver start
 ./csserver stop
-./csserver restart</code></p>
-<p>可以键入下面指令来进入server console</p>
+./csserver restart</code></pre><p>可以键入下面指令来进入server console</p>
 <pre><code>./csserver console</code></pre><p><strong>ps:退出console需要按下ctrl+b然后按下d来退出，直接使用ctrl+C会中止服务端!</strong></p>
 <p>更新服务端</p>
 <pre><code>./csserver update</code></pre><h2 id="如何配置启动参数"><a href="#如何配置启动参数" class="headerlink" title="如何配置启动参数?"></a>如何配置启动参数?</h2><p>因为linuxgsm的原因，无法直接使用sh带参数来运行服务器，而且运行多个服务器的时候会出现端口冲突，所以我们需要更改位于lgsm/config-lgsm/gameserver的配置文件</p>
-<p>参照_defult.cfg修改目录下的common.cfg(推荐直接使用winscp类的文件管理软件进行编辑，非图形界面我用着太累了。。)</p>
-<p><strong>ps:common.cfg跟服务器的cfg文件是两样不同的东西，请不要混淆编辑</strong></p>
+<p>参照_defult.cfg修改目录下的common.cfg(推荐直接使用winscp类的文件管理软件进行编辑，非图形界面编辑我是用着太累了。。)</p>
+<p><strong>ps:common.cfg跟服务器的自定义cfg文件是两样不同的东西，请不要混淆编辑</strong></p>
+<p>安装完毕后使用su -指令按需求切换用户对单个服务端进行管理</p>
 
             </div>
             <hr/>

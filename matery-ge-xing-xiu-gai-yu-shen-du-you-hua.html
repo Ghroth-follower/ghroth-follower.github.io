@@ -40,26 +40,6 @@
 
 <body>
     
-<div id="loading-box">
-    <div class="loading-left-bg"></div>
-    <div class="loading-right-bg"></div>
-    <div class="spinner-box">
-        <div class="configure-border-1">
-            <div class="configure-core"></div>
-        </div>
-        <div class="configure-border-2">
-            <div class="configure-core"></div>
-        </div>
-        <div class="loading-word">加载中...</div>
-    </div>
-</div>
-<script>
-    window.addEventListener('load', function(){
-        document.body.style.overflow = 'auto';
-        document.getElementById('loading-box').classList.add("loaded")
-    }, false)
-</script>
-
 
     <header class="navbar-fixed">
     <nav id="headNav" class="bg-color nav-transparent">
@@ -591,19 +571,32 @@
 <p>使用cdn后github page的enforce https会失效，请自己申请或者购买ssl证书，<strong>cdn需要ssl证书中nginx的两项内容</strong>，另外因为源站托管的原因大概是不能全链路https了吧，算了这个不重要</p>
 <h1 id="cdn的选用"><a href="#cdn的选用" class="headerlink" title="cdn的选用"></a>cdn的选用</h1><p>对中国访问友好且我用着还不错的基本有两家</p>
 <p><strong>nodecache</strong>:注册送500g(时常限制1个月，用完或者过期为止)，速度还可以，基础流量计费亚太节点大概0.12刀/g，按小时实时扣费<br><a href="https://console-api.nodecache.com/f?aff=30bW24" target="_blank" rel="noopener">可以点击博主的邀请链接支持一下(</a></p>
-<p><strong>udomain</strong>:香港的一家企业，免费试用，试用限制不清楚，速度还可以就是有的时候配置完cdn会抽掉(国内ip进站都会绕路到北美节点这种)，费用香港0.4港币/g，可以说是非常便宜了，但是注册与支付比较麻烦</p>
+<p><strong>udomain</strong>:香港的一家企业，免费试用，试用限制不清楚，速度还可以就是配置完cdn会抽掉(国内ip进站都会绕路到北美节点这种)，费用香港0.4港币/g，可以说是非常便宜了，但是注册与支付比较麻烦</p>
 <p>ps1:<strong>udomain账户注册需要申请之后等待工作人员处理</strong>，疫情期间大概两到三天的这样吧</p>
 <p>ps2:nodecache确认已经把被墙ip列入访问与加速黑名单，大概率无法用于套v2ray以及其他用途，<strong>包括google爬虫对网站的抓取!</strong></p>
-<h2 id="静态资源的加速"><a href="#静态资源的加速" class="headerlink" title="静态资源的加速"></a>静态资源的加速</h2><p>因为图片和一些其他东西对cdn流量消耗过于庞大，所以我们可以将这些静态的资源导向站外来减缓cdn压力<br>这边推荐使用<a href="https://www.jsdelivr.com/" target="_blank" rel="noopener">jsdelivr</a></p>
-<p>对于github中任何的资源我们可以直接使用下面格式的进行引用<br>`<br>// load any project hosted on npm</p>
-<p><a href="https://cdn.jsdelivr.net/npm/package@version/file" target="_blank" rel="noopener">https://cdn.jsdelivr.net/npm/package@version/file</a><br>`<br>而且jsdelivr作为一家加速各个op网站静态资源的巨头free cdn，在国内也是有不少节点的<br>测试网址:cdn.jsdelivr.net</p>
+<h2 id="静态资源的加速"><a href="#静态资源的加速" class="headerlink" title="静态资源的加速"></a>静态资源的加速</h2><p>因为图片和一些其他东西对cdn流量消耗过于庞大，所以我们可以将这些静态的资源导向站外来减缓cdn压力(包括视频音频图片和部分js)<br>这边推荐使用<a href="https://www.jsdelivr.com/" target="_blank" rel="noopener">jsdelivr</a></p>
+<p>对于github中任何的资源我们可以直接使用下面格式的进行引用<br>    <a href="https://cdn.jsdelivr.net/gh/user/repo@version/file" target="_blank" rel="noopener">https://cdn.jsdelivr.net/gh/user/repo@version/file</a><br>而且jsdelivr作为一家加速各个op网站静态资源的巨头free cdn，在国内也是有不少节点的<br>测试网址: cdn.jsdelivr.net</p>
 <p><img src="XZ(3PD5%5D(https://cdn.jsdelivr.net/gh/Ghroth-follower/ghroth-follower.github.io/images/YGSSTJB$$K0U22.png" alt=""></p>
-<h2 id="nodecache分地区cname解析解救谷歌搜索爬虫"><a href="#nodecache分地区cname解析解救谷歌搜索爬虫" class="headerlink" title="nodecache分地区cname解析解救谷歌搜索爬虫!"></a>nodecache分地区cname解析解救谷歌搜索爬虫!</h2><p>大概率是nodecache为了防止有人嫖cdn流量用来干什么不好的事情所以把谷歌的ip都列黑名单了，相比与和老板进行交涉还是自己动手的好，我们只需要把域名在境外的解析设置绕开nodecache的cdn就好</p>
+<h2 id="相关问题的解决方案"><a href="#相关问题的解决方案" class="headerlink" title="相关问题的解决方案"></a>相关问题的解决方案</h2><h3 id="nodecache加速无法被谷歌爬虫爬取"><a href="#nodecache加速无法被谷歌爬虫爬取" class="headerlink" title="nodecache加速无法被谷歌爬虫爬取"></a>nodecache加速无法被谷歌爬虫爬取</h3><p>大概率是nodecache为了防止有人嫖cdn流量用来干什么不好的事情所以把谷歌的ip都列黑名单了(纯属猜测!，相比与和老板进行交涉还是自己动手的好，我们只需要把域名在境外的解析设置绕开nodecache的cdn</p>
 <p>ps:dnspod是腾讯云的解析服务，提供免费与付费解析，这边我们免费版就可以使用境内与境外分区解析无需付费</p>
 <p><img src="https://cdn.jsdelivr.net/gh/Ghroth-follower/ghroth-follower.github.io/images/dns.png" alt=""></p>
 <p>将自己域名的ns服务器首选与复选改为dnspod的服务器，配置好境外境内需要解析的ip与域名等待递归生效即可</p>
 <p>另外dnspod的解析服务好像需要实名认证。。不太清楚，博主是老客户所以一般的认证手续都有办了</p>
-<p>这边境外可以直接a记录到自己的GitHub page ip，也可以像博主一样使用另外的cdn，cloudflare可以通过partner使用cname接入，这边推荐一下cf partner的网站 <a href="https://cdn.bnxb.com/#" target="_blank" rel="noopener">https://cdn.bnxb.com/#</a></p>
+<p>境外可以直接a记录到自己的GitHub page ip，也可以像博主一样使用另外的cdn(cloudflare)，关于cloudflare的cname可以通过partner接入，这边推荐一下cf partner的网站(笨牛) <a href="https://cdn.bnxb.com/#" target="_blank" rel="noopener">https://cdn.bnxb.com/#</a></p>
+<p>ps:一旦接入partner的cname服务以后你就可以直接a记录到cloudflare的任意全球节点(不推荐全球都解析到一个节点，可能会被cf封域名)，另外一点就是cf节点质量在国内都不怎么样，即使是香港，虽然低延迟但是丢包高的离谱，甚至没有裸连效果好</p>
+<h3 id="udomain国内解析绕路北美"><a href="#udomain国内解析绕路北美" class="headerlink" title="udomain国内解析绕路北美"></a>udomain国内解析绕路北美</h3><p>这真的不是一个偶然状况。。。我国对dns的投毒不只是限于惩罚某个域名把他解析到超时的block ip，也会导致绝大多数的全球cdn服务都绕道走远路(一定是这样了，不然hosts加速这种东西也不会这么流行)。</p>
+<p>另外就是不要指望udomain的客服为你做些什么(其实就是不会做些什么)，指望他们不如自己动手</p>
+<p>幸运的是udomain的cdn服务也是接入以后可以随意cname/a记录到任意的节点，这边列出一些我的总结(可以随意cname(吧……</p>
+<p>///</p>
+<p>台湾节点:xg-def-tw.xcdn.global<br>描述:无</p>
+<p>香港节点:xg-def-tw.xcdn.global<br>描述:无</p>
+<p>全球节点(大陆直接解析100%绕路北美):xg-def-int.xcdn.global<br>描述:大陆直接解析100%绕路北美</p>
+<p>中国节点:xg-def-cn.xcdn.global<br>描述:货真价实的中国节点..貌似是走广东那边，具体速度没有测试过，没有申请中国cdn也可以使用，但出了任何事情博主不负任何责任</p>
+<p>香港与台湾节点:xcdn-defhktw-noncn.xcdn.global<br>描述:绕过大陆</p>
+<p>全球节点noncn:xcdn-def-noncn.xcdn.global<br>描述:绕过大陆，同样国内100%绕路北美</p>
+<p>全球节点:xcdn-global.xcdn.global<br>描述:国内解析会直接接入上方中国节点</p>
+<p>///</p>
+<p>不推荐狂草其中的一个地区节点……不清楚会不会被udomain惩罚，发生任何事情博主不承担任何责任</p>
 <p>关于访问优化大概就是这样结束了吧。。。以后有什么其他的问题会在这里持续更新</p>
 
             </div>

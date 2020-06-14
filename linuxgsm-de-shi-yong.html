@@ -576,9 +576,9 @@
 yum install mailx postfix curl wget tar bzip2 gzip unzip python3 binutils bc jq tmux glibc.i686 libstdc++ libstdc++.i686</code></pre><p>建立新用户csserver(可设置安全密码，分支用户方便管理且linuxgsm无法在root下运行)</p>
 <pre><code>adduser csserver</code></pre><p>切换到csserver</p>
 <pre><code>su - csserver</code></pre><p>安装linuxgsm与css服务端(全自动，自动登陆anonymous账户无需设置)</p>
-<p><code>wget -O linuxgsm.sh https://linuxgsm.sh &amp;&amp; chmod +x linuxgsm.sh &amp;&amp; bash linuxgsm.sh csserver
-./csserver install</code></p>
-<p><strong>ps:国内vps在下载安装的时候可能会断流(下载中断/安装失败)，请注意反馈文字，在安装失败报错后及时重新尝试安装(多试着装几遍就好了)</strong></p>
+<pre><code>wget -O linuxgsm.sh https://linuxgsm.sh &amp;&amp; chmod +x linuxgsm.sh &amp;&amp; bash linuxgsm.sh csserver
+
+./csserver install</code></pre><p><strong>ps:国内vps在下载安装的时候可能会断流(下载中断/安装失败)，请注意反馈文字，在安装失败报错后及时重新尝试安装(多试着装几遍就好了)</strong></p>
 <h3 id="基本使用"><a href="#基本使用" class="headerlink" title="基本使用"></a>基本使用</h3><p>列举指令列表(help)</p>
 <pre><code>./csserver</code></pre><p>运行，中止和重启分别对应</p>
 <pre><code>./csserver start

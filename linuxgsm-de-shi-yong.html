@@ -571,8 +571,9 @@
 <p>当然，我们除了基本的游戏服务器以外也可以建立如teamspeak server之类的实用类服务器(大概吧，我只看到了ts3这一种非游戏服务器)</p>
 <h2 id="该如何使用"><a href="#该如何使用" class="headerlink" title="该如何使用?"></a>该如何使用?</h2><h3 id="下载安装"><a href="#下载安装" class="headerlink" title="下载安装"></a>下载安装</h3><p><a href="https://linuxgsm.com/servers/" target="_blank" rel="noopener">https://linuxgsm.com/servers/</a><br>直接进入上方网址，列举了所有支持的game server</p>
 <p>以centos7为系统的<a href="https://linuxgsm.com/lgsm/csserver/" target="_blank" rel="noopener">counter strike server(CSSERVER)</a>搭建为例</p>
-<p>首先在服务器网页的dependencies选项中安装依赖（首次使用linuxgsm)<br>centos7:<br>    yum install epel-release<br>    yum install mailx postfix curl wget tar bzip2 gzip unzip python3 binutils bc jq tmux glibc.i686 libstdc++ libstdc++.i686</p>
-<p>建立新用户csserver(可设置安全密码，分支用户方便管理且linuxgsm无法在root下运行)</p>
+<p>首先在服务器网页的dependencies选项中安装依赖（首次使用linuxgsm)<br>centos7:</p>
+<pre><code>yum install epel-release
+yum install mailx postfix curl wget tar bzip2 gzip unzip python3 binutils bc jq tmux glibc.i686 libstdc++ libstdc++.i686</code></pre><p>建立新用户csserver(可设置安全密码，分支用户方便管理且linuxgsm无法在root下运行)</p>
 <pre><code>adduser csserver</code></pre><p>切换到csserver</p>
 <pre><code>su - csserver</code></pre><p>安装linuxgsm与css服务端(全自动，自动登陆anonymous账户无需设置)</p>
 <p><code>wget -O linuxgsm.sh https://linuxgsm.sh &amp;&amp; chmod +x linuxgsm.sh &amp;&amp; bash linuxgsm.sh csserver

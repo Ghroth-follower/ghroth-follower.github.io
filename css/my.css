@@ -57,16 +57,6 @@
     }
 }
 
-canvas {
-  position: fixed;
-  right: 0px;
-  bottom: 0px;
-  min-width: 100%;
-  min-height: 100%;
-  height: auto;
-  width: auto;
-  z-index: -1;
-}
 
  body {
     cursor: url(/cur/normal.cur),auto;
@@ -74,3 +64,11 @@ canvas {
 :active {
       cursor: url(/cur/normal.cur),auto!important
   } 
+
+
+body{
+background-image:url(https://cdn.jsdelivr.net/gh/Ghroth-follower/ghroth-follower.github.io/images/BG.png);
+background-repeat: no-repeat;
+background-attachment:fixed;
+background-position:50% 50%; 
+}

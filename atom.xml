@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://democrazyzero.site/"/>
-  <updated>2020-06-14T14:18:16.461Z</updated>
+  <updated>2020-06-16T06:59:08.517Z</updated>
   <id>https://democrazyzero.site/</id>
   
   <author>
@@ -17,11 +17,39 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>使用netch进行TUN/TAP游戏加速改善nat状况</title>
+    <link href="https://democrazyzero.site/shi-yong-netch-jin-xing-you-xi-jia-su.html"/>
+    <id>https://democrazyzero.site/shi-yong-netch-jin-xing-you-xi-jia-su.html</id>
+    <published>2020-06-16T06:19:00.000Z</published>
+    <updated>2020-06-16T06:59:08.517Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;之前腾讯云产品采购季，忍痛花200人民币左右钱租了台1年的香港vps，国内直连基本都在50ms往下↓&lt;br&gt;所以想要往上面挂一个代理用来玩游戏(没办法，套餐死限制3M带宽)&lt;/p&gt;
+&lt;p&gt;但是大部分的代理软件模式都只支持sockshttp(吧)，所以玩游戏完全不过代理!，然
+        
+      
+    
+    </summary>
+    
+    
+      <category term="游戏" scheme="https://democrazyzero.site/categories/%E6%B8%B8%E6%88%8F/"/>
+    
+    
+      <category term="游戏" scheme="https://democrazyzero.site/tags/%E6%B8%B8%E6%88%8F/"/>
+    
+  </entry>
+  
+  <entry>
     <title>使用linuxgsm来管理你的游戏服务器</title>
     <link href="https://democrazyzero.site/linuxgsm-de-shi-yong.html"/>
     <id>https://democrazyzero.site/linuxgsm-de-shi-yong.html</id>
     <published>2020-06-07T06:52:51.000Z</published>
-    <updated>2020-06-14T14:18:16.461Z</updated>
+    <updated>2020-06-16T06:59:03.958Z</updated>
     
     <summary type="html">
     

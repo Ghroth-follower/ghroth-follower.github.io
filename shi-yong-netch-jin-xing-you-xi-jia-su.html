@@ -7,7 +7,7 @@
     <link rel="stylesheet" type="text/css" href="/css/loading.css">
     <link  rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Ghroth-follower/ghroth-follower.github.io/live2d/css/live2d.css"  />
     <meta charset="utf-8">
-    <meta name="keywords" content="使用linuxgsm来管理你的游戏服务器, WG.ST">
+    <meta name="keywords" content="使用netch进行TUN/TAP游戏加速改善nat状况, WG.ST">
     <meta name="description" content="格赫罗斯表达了我对物质宇宙的向往与恐惧">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -19,7 +19,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>使用linuxgsm来管理你的游戏服务器 | WG.ST</title>
+    <title>使用netch进行TUN/TAP游戏加速改善nat状况 | WG.ST</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -406,7 +406,7 @@
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">使用linuxgsm来管理你的游戏服务器</h1>
+                    <h1 class="description center-align post-title">使用netch进行TUN/TAP游戏加速改善nat状况</h1>
                 </div>
             </div>
         </div>
@@ -535,8 +535,8 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/server/" class="post-category">
-                                server
+                            <a href="/categories/%E6%B8%B8%E6%88%8F/" class="post-category">
+                                游戏
                             </a>
                         
                     </div>
@@ -548,7 +548,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2020-06-07
+                    2020-06-16
                 </div>
                 
 
@@ -564,32 +564,15 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>一直想总结一下linuxgsm的使用，基本对linux建服有一点了解的都听说过linuxgsm吧，但是找不到一篇关于他的中文说明(大概吧，我没有找到)</p>
-<h2 id="什么是linuxgsm"><a href="#什么是linuxgsm" class="headerlink" title="什么是linuxgsm?"></a>什么是linuxgsm?</h2><p>全称linux game server managers，顾名思义，他的存在是为了帮助我们在Linux端(大多是非图形操作系统)建立并管理服务器用的<br>并且linuxgsm的所有服务端都是完美兼容任何linux以及衍生系统的(暂不支持以wine为桥梁的windows服务端建服)</p>
-<p>服务端的安装都是从steamcmd中获取最新的版本，而且也提供一键更新</p>
-<p>这边贴一下官网 <a href="https://linuxgsm.com/" target="_blank" rel="noopener">https://linuxgsm.com/</a></p>
-<p>当然，我们除了基本的游戏服务器以外也可以建立如teamspeak server之类的实用类服务器(大概吧，我只看到了ts3这一种非游戏服务器)</p>
-<h2 id="该如何使用"><a href="#该如何使用" class="headerlink" title="该如何使用?"></a>该如何使用?</h2><h3 id="下载安装"><a href="#下载安装" class="headerlink" title="下载安装"></a>下载安装</h3><p><a href="https://linuxgsm.com/servers/" target="_blank" rel="noopener">https://linuxgsm.com/servers/</a><br>直接进入上方网址，列举了所有支持的game server</p>
-<p>以centos7为系统的<a href="https://linuxgsm.com/lgsm/csserver/" target="_blank" rel="noopener">counter strike server(CSSERVER)</a>搭建为例</p>
-<p>首先在服务器网页的dependencies选项中安装依赖（首次使用linuxgsm)<br>centos7:</p>
-<pre><code>yum install epel-release
-yum install mailx postfix curl wget tar bzip2 gzip unzip python3 binutils bc jq tmux glibc.i686 libstdc++ libstdc++.i686</code></pre><p>建立新用户csserver(可设置安全密码，分支用户方便管理且linuxgsm无法在root下运行)</p>
-<pre><code>adduser csserver</code></pre><p>切换到csserver</p>
-<pre><code>su - csserver</code></pre><p>安装linuxgsm与css服务端(全自动，自动登陆anonymous账户无需设置)</p>
-<pre><code>wget -O linuxgsm.sh https://linuxgsm.sh &amp;&amp; chmod +x linuxgsm.sh &amp;&amp; bash linuxgsm.sh csserver
-
-./csserver install</code></pre><p><strong>ps:国内vps在下载安装的时候可能会断流(下载中断/安装失败)，请注意反馈文字，在安装失败报错后及时重新尝试安装(多试着装几遍就好了)</strong></p>
-<h3 id="基本使用"><a href="#基本使用" class="headerlink" title="基本使用"></a>基本使用</h3><p>列举指令列表(help)</p>
-<pre><code>./csserver</code></pre><p>运行，中止和重启分别对应</p>
-<pre><code>./csserver start
-./csserver stop
-./csserver restart</code></pre><p>可以键入下面指令来进入server console</p>
-<pre><code>./csserver console</code></pre><p><strong>ps:退出console需要按下ctrl+b然后按下d来退出，直接使用ctrl+C会中止服务端!</strong></p>
-<p>更新服务端</p>
-<pre><code>./csserver update</code></pre><h2 id="如何配置启动参数"><a href="#如何配置启动参数" class="headerlink" title="如何配置启动参数?"></a>如何配置启动参数?</h2><p>因为linuxgsm的原因，无法直接使用sh带参数来运行服务器，而且运行多个服务器的时候会出现端口冲突，所以我们需要更改位于lgsm/config-lgsm/gameserver的配置文件</p>
-<p>参照_defult.cfg修改目录下的common.cfg(推荐直接使用winscp类的文件管理软件进行编辑，非图形界面编辑我是用着太累了。。)</p>
-<p><strong>ps:common.cfg跟服务器的自定义cfg文件是两样不同的东西，请不要混淆编辑</strong></p>
-<p>安装完毕后使用su -指令按需求切换用户对单个服务端进行管理</p>
+                <p>之前腾讯云产品采购季，忍痛花200人民币左右钱租了台1年的香港vps，国内直连基本都在50ms往下↓<br>所以想要往上面挂一个代理用来玩游戏(没办法，套餐死限制3M带宽)</p>
+<p>但是大部分的代理软件模式都只支持sockshttp(吧)，所以玩游戏完全不过代理!，然后一番搜索之后找到了这款软件<br><a href="https://github.com/NetchX/Netch" target="_blank" rel="noopener">netch</a></p>
+<p>因为sstap早已停止维护，且无法从根本上改善nat状况，所以netch的网络加速相比之下更为成熟一些</p>
+<h2 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h2><p><a href="https://github.com/NetchX/Netch/releases" target="_blank" rel="noopener">下载地址(windowsonly)</a>(运行需要安装依赖)</p>
+<p>模式对应你要加速的软件<br>支持协议包括socks5，shadowsocks，shadowsocksr和vmess</p>
+<p>可以过滤exe程序加速，只需要点击模式→创建进程模式，添加你的exe程序即可(在游戏根目录进行扫描自动添加)<br>也可以在根目录的mode目录种手动添加</p>
+<p>选择完毕节点，点击启动开启加速(自动STUN测试nat并安装虚拟网卡，fullcone为开放nat，既nat类型1)</p>
+<h2 id="其他问题"><a href="#其他问题" class="headerlink" title="其他问题"></a>其他问题</h2><h3 id="全局代理"><a href="#全局代理" class="headerlink" title="全局代理"></a>全局代理</h3><p>bypass lan即对应全局，带china既绕过大陆，TUN/TAP即通过虚拟网卡(真全局，可改善nat)，socks+http(NSP)既不走程序代理(普通代理)</p>
+<p>线路条件差(非CN2，或低优先线路造成丢包)建议使用国内代理中转(广东或者同服务器提供商内网出口)<br>或者套cdn(不现实，能看的到的国内CDN节点的都要域名备案)<br>或者直接运用钞能力买IPLC线路的机子(IPLC永远的神)</p>
 
             </div>
             <hr/>
@@ -615,7 +598,7 @@ yum install mailx postfix curl wget tar bzip2 gzip unzip python3 binutils bc jq 
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://democrazyzero.site/linuxgsm-de-shi-yong.html">https://democrazyzero.site/linuxgsm-de-shi-yong.html</a>
+                    <a href="https://democrazyzero.site/shi-yong-netch-jin-xing-you-xi-jia-su.html">https://democrazyzero.site/shi-yong-netch-jin-xing-you-xi-jia-su.html</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -958,9 +941,10 @@ yum install mailx postfix curl wget tar bzip2 gzip unzip python3 binutils bc jq 
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
                 <a href="/shi-yong-netch-jin-xing-you-xi-jia-su.html">
                     <div class="card-image">
@@ -977,9 +961,9 @@ yum install mailx postfix curl wget tar bzip2 gzip unzip python3 binutils bc jq 
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2020-06-16
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-06-16
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
@@ -992,6 +976,7 @@ yum install mailx postfix curl wget tar bzip2 gzip unzip python3 binutils bc jq 
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
@@ -1010,30 +995,30 @@ yum install mailx postfix curl wget tar bzip2 gzip unzip python3 binutils bc jq 
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/doom-eternal-zuo-bi-kong-zhi-tai.html">
+                <a href="/linuxgsm-de-shi-yong.html">
                     <div class="card-image">
                         
-                        <img src="https://cdn.jsdelivr.net/gh/Ghroth-follower/ghroth-follower.github.io/images/234.jpg" class="responsive-img" alt="解锁DOOM ETERNAL(永恒)控制台的作弊指令">
+                        <img src="https://cdn.jsdelivr.net/gh/Ghroth-follower/ghroth-follower.github.io/images/73531546_p0.jpg" class="responsive-img" alt="使用linuxgsm来管理你的游戏服务器">
                         
-                        <span class="card-title">解锁DOOM ETERNAL(永恒)控制台的作弊指令</span>
+                        <span class="card-title">使用linuxgsm来管理你的游戏服务器</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            基于sunbeam的doom永恒(作弊)控制台解锁
+                            使用linuxgsm来对游戏服务器进行统一管理
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-05-24
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-06-07
                             </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/%E6%B8%B8%E6%88%8F/" class="post-category">
-                                    游戏
+                            <a href="/categories/server/" class="post-category">
+                                    server
                                 </a>
                             
                             
@@ -1043,8 +1028,8 @@ yum install mailx postfix curl wget tar bzip2 gzip unzip python3 binutils bc jq 
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/DOOM%E6%B0%B8%E6%81%92/">
-                        <span class="chip bg-color">DOOM永恒</span>
+                    <a href="/tags/%E6%B8%B8%E6%88%8F/">
+                        <span class="chip bg-color">游戏</span>
                     </a>
                     
                 </div>

@@ -528,52 +528,6 @@
         
             
             <div class="carousel-item amber white-text carousel-post bg-cover"
-                 style="background-image: url('https://cdn.jsdelivr.net/gh/Ghroth-follower/ghroth-follower.github.io/medias/featureimages/4.jpg');">
-                <div class="container">
-                    <div class="row">
-                        <div class="col s10 offset-s1">
-                            <div class="title center-align">英语积累</div>
-                            <div class="description center-align">
-                                
-                                    失忆单词记录
-                                
-                            </div>
-                            <div class="cover-btns">
-                                <a href="/ying-yu-ji-lei-bi-ji.html" class="waves-effect waves-light btn"
-                                   target="_blank">
-                                    <i class="icon fa fa-eye fa-fw"></i>阅读更多
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        
-            
-            <div class="carousel-item amber white-text carousel-post bg-cover"
-                 style="background-image: url('https://cdn.jsdelivr.net/gh/Ghroth-follower/ghroth-follower.github.io/medias/featureimages/3.jpg');">
-                <div class="container">
-                    <div class="row">
-                        <div class="col s10 offset-s1">
-                            <div class="title center-align">matery个性修改与深度优化(一)</div>
-                            <div class="description center-align">
-                                
-                                    自己对matery的一点修改经验
-                                
-                            </div>
-                            <div class="cover-btns">
-                                <a href="/hexo-jian-zhan-guo-cheng-yu-xi-jie.html" class="waves-effect waves-light btn"
-                                   target="_blank">
-                                    <i class="icon fa fa-eye fa-fw"></i>阅读更多
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        
-            
-            <div class="carousel-item amber white-text carousel-post bg-cover"
                  style="background-image: url('https://cdn.jsdelivr.net/gh/Ghroth-follower/ghroth-follower.github.io/medias/featureimages/0.jpg');">
                 <div class="container">
                     <div class="row">
@@ -676,19 +630,8 @@
 
         let carouselIntervalId;
         
-        // Loop to call the next cover article picture.
-        let autoCarousel = function () {
-            carouselIntervalId = setInterval(function () {
-                coverSlider.carousel('next');
-            }, 5000);
-        };
-        autoCarousel();
-        
 
         function restartPlay() {
-            
-            clearInterval(carouselIntervalId);
-            autoCarousel();
             
         };
 

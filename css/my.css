@@ -57,14 +57,12 @@
     }
 }
 
-
  body {
     cursor: url(/cur/normal.cur),auto;
 }
 :active {
       cursor: url(/cur/normal.cur),auto!important
   } 
-
 
 body{
 background-image:url(https://cdn.jsdelivr.net/gh/Ghroth-follower/ghroth-follower.github.io/images/BG.jpg);

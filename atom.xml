@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://democrazyzero.site/"/>
-  <updated>2020-06-27T01:43:39.216Z</updated>
+  <updated>2020-06-27T15:21:33.739Z</updated>
   <id>https://democrazyzero.site/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>nat打洞</title>
+    <link href="https://democrazyzero.site/nat-da-dong.html"/>
+    <id>https://democrazyzero.site/nat-da-dong.html</id>
+    <published>2020-06-27T15:17:19.000Z</published>
+    <updated>2020-06-27T15:21:33.739Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;全锥型     全锥型    ✓&lt;br&gt;全锥型     受限锥型    ✓&lt;br&gt;全锥型     端口受限锥型    ✓&lt;br&gt;全锥型     对称型    ✓&lt;br&gt;受限锥型     受限锥型    ✓&lt;br&gt;受限锥型     端口受限锥型    ✓&lt;br&gt;受限锥型  
+        
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
   
   <entry>
     <title>(摘录)markdown语法指南</title>

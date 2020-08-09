@@ -7,7 +7,7 @@
     <link rel="stylesheet" type="text/css" href="/css/loading.css">
     <link  rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Ghroth-follower/ghroth-follower.github.io/live2d/css/live2d.css"  />
     <meta charset="utf-8">
-    <meta name="keywords" content="使用linuxgsm来管理你的游戏服务器, WG.ST">
+    <meta name="keywords" content="L4D2建服笔记, WG.ST">
     <meta name="description" content="格赫罗斯表达了我对物质宇宙的向往与恐惧">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -19,7 +19,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>使用linuxgsm来管理你的游戏服务器 | WG.ST</title>
+    <title>L4D2建服笔记 | WG.ST</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -406,7 +406,7 @@
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">使用linuxgsm来管理你的游戏服务器</h1>
+                    <h1 class="description center-align post-title">L4D2建服笔记</h1>
                 </div>
             </div>
         </div>
@@ -523,8 +523,8 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/%E6%B8%B8%E6%88%8F/">
-                                <span class="chip bg-color">游戏</span>
+                            <a href="/tags/gameserver/">
+                                <span class="chip bg-color">gameserver</span>
                             </a>
                         
                     </div>
@@ -535,8 +535,8 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/server/" class="post-category">
-                                server
+                            <a href="/categories/%E6%9C%8D%E5%8A%A1%E5%99%A8/" class="post-category">
+                                服务器
                             </a>
                         
                     </div>
@@ -548,7 +548,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2020-06-07
+                    2020-08-09
                 </div>
                 
 
@@ -564,36 +564,72 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>一直想总结一下linuxgsm的使用，基本对linux建服有一点了解的都听说过linuxgsm吧，但是找不到一篇关于他的中文说明(大概吧，我没有找到)</p>
-<h2 id="什么是linuxgsm"><a href="#什么是linuxgsm" class="headerlink" title="什么是linuxgsm?"></a>什么是linuxgsm?</h2><p>全称linux game server managers，顾名思义，他的存在是为了帮助我们在Linux端(大多是非图形操作系统)建立并管理服务器用的<br>并且linuxgsm的所有服务端都是完美兼容任何linux以及衍生系统的(暂不支持以wine为桥梁的windows服务端建服)</p>
-<p>服务端的安装都是从steamcmd中获取最新的版本，而且也提供一键更新</p>
-<p>这边贴一下官网 <a href="https://linuxgsm.com/" target="_blank" rel="noopener">https://linuxgsm.com/</a></p>
-<p>当然，我们除了基本的游戏服务器以外也可以建立如teamspeak server之类的实用类服务器(大概吧，我只看到了ts3这一种非游戏服务器)</p>
-<h2 id="该如何使用"><a href="#该如何使用" class="headerlink" title="该如何使用?"></a>该如何使用?</h2><h3 id="下载安装"><a href="#下载安装" class="headerlink" title="下载安装"></a>下载安装</h3><p><a href="https://linuxgsm.com/servers/" target="_blank" rel="noopener">https://linuxgsm.com/servers/</a><br>直接进入上方网址，列举了所有支持的game server</p>
-<p>以centos7为系统的<a href="https://linuxgsm.com/lgsm/csserver/" target="_blank" rel="noopener">counter strike server(CSSERVER)</a>搭建为例</p>
-<p>首先在服务器网页的dependencies选项中安装依赖（首次使用linuxgsm)<br>centos7:</p>
-<pre><code>yum install epel-release
-yum install mailx postfix curl wget tar bzip2 gzip unzip python3 binutils bc jq tmux glibc.i686 libstdc++ libstdc++.i686</code></pre><p>建立新用户csserver(可设置安全密码，分支用户方便管理且linuxgsm无法在root下运行)</p>
-<pre><code>adduser csserver</code></pre><p>切换到csserver</p>
-<pre><code>su - csserver</code></pre><p>安装linuxgsm与css服务端(全自动，自动登陆anonymous账户无需设置)</p>
-<pre><code>wget -O linuxgsm.sh https://linuxgsm.sh &amp;&amp; chmod +x linuxgsm.sh &amp;&amp; bash linuxgsm.sh csserver
+                <h2 id="安装l4d2server-linuxgsm"><a href="#安装l4d2server-linuxgsm" class="headerlink" title="安装l4d2server(linuxgsm)"></a>安装l4d2server(linuxgsm)</h2><p>使用Xshell</p>
+<h3 id="安装依赖"><a href="#安装依赖" class="headerlink" title="安装依赖"></a>安装依赖</h3><pre><code>yum install epel-release
 
-./csserver install</code></pre><p><strong>ps:国内vps在下载安装的时候可能会断流(下载中断/安装失败)，请注意反馈文字，在安装失败报错后及时重新尝试安装(多试着装几遍就好了)</strong></p>
-<h3 id="基本使用"><a href="#基本使用" class="headerlink" title="基本使用"></a>基本使用</h3><p>列举指令列表(help)</p>
-<pre><code>./csserver</code></pre><p>运行，中止和重启分别对应</p>
-<pre><code>./csserver start
-./csserver stop
-./csserver restart</code></pre><p>可以键入下面指令来进入server console</p>
-<pre><code>./csserver console</code></pre><p><strong>ps:退出console需要按下ctrl+b然后按下d来退出，直接使用ctrl+C会中止服务端!</strong></p>
-<p>更新服务端</p>
-<pre><code>./csserver update</code></pre><h2 id="如何配置启动参数"><a href="#如何配置启动参数" class="headerlink" title="如何配置启动参数?"></a>如何配置启动参数?</h2><p>因为linuxgsm的原因，无法直接使用sh带参数来运行服务器，有时我们需要对服务器的启动参数进行自定义，这时我们就需要更改位于lgsm/config-lgsm/gameserver的配置文件</p>
-<p>这里的config文件与直接的启动参数不同，我们只能对照官方给出的示例文件:_default.cfg 对有限的启动选项进行更改</p>
-<p>如果想要使用一些自定义的启动参数，我们就需要用到parm，parm的使用格式如下(添加到gamerserver.cfg中)</p>
-<pre><code>## Server Parameters | https://docs.linuxgsm.com/configuration/start-parameters#additional-parameters
+yum install mailx postfix curl wget tar bzip2 gzip unzip python3 binutils bc jq tmux glibc.i686 libstdc++ libstdc++.i686</code></pre><h3 id="安装服务器"><a href="#安装服务器" class="headerlink" title="安装服务器"></a>安装服务器</h3><ol>
+<li><p>创建用户<br> adduser l4d2server<br> su - l4d2server</p>
+</li>
+<li><p>安装linuxgsm</p>
+<p> wget -O linuxgsm.sh <a href="https://linuxgsm.sh" target="_blank" rel="noopener">https://linuxgsm.sh</a> &amp;&amp; chmod +x linuxgsm.sh &amp;&amp; bash linuxgsm.sh l4d2server</p>
+</li>
+</ol>
+<pre><code>./l4d2server install</code></pre><h2 id="必要插件与config的配置"><a href="#必要插件与config的配置" class="headerlink" title="必要插件与config的配置"></a>必要插件与config的配置</h2><h3 id="sourcemod，metamod插件平台，l4dtoolz"><a href="#sourcemod，metamod插件平台，l4dtoolz" class="headerlink" title="sourcemod，metamod插件平台，l4dtoolz"></a>sourcemod，metamod插件平台，l4dtoolz</h3><p><a href="https://www.sourcemod.net/downloads.php?branch=stable" target="_blank" rel="noopener">sourcemod</a><br><a href="https://www.sourcemm.net/snapshots" target="_blank" rel="noopener">metamod:source</a><br><a href="https://forums.alliedmods.net/showthread.php?t=93600" target="_blank" rel="noopener">L4DToolZ</a></p>
+<p>生成L4D2的VDF文件: <a href="https://www.sourcemm.net/vdf" target="_blank" rel="noopener">https://www.sourcemm.net/vdf</a><br>下载后覆盖原文件</p>
+<p>服务器config: l4d2server.cfg文件设置</p>
+<pre><code>sm_cvar fps_max 0
 
-fn_parms(){
-parms=&quot;-game nmrih -strictportbind -ip 91.121.72.41 -port 27015 +clientport 27017 +tv_port 27016 +map nmo_broadway +servercfgfile nmrih-server-1.cfg -maxplayers 8&quot;
-}</code></pre><p>如上所示，将参数添加到parms=””中即可</p>
+sm_cvar net_splitpacket_maxrate 30000
+
+sm_cvar nb_update_frequency 0.06
+
+sm_cvar sv_minrate 100000
+
+sm_cvar sv_maxrate 101000
+
+sm_cvar sv_mincmdrate 100
+
+sm_cvar sv_maxcmdrate 101
+
+sm_cvar sv_minupdaterate 100
+
+sm_cvar sv_maxupdaterate 101
+
+sm_cvar sv_client_min_interp_ratio -1
+
+sm_cvar sv_client_max_interp_ratio 2
+
+sm_cvar sv_maxplayers 8
+
+sm_cvar sv_visiblemaxplayers 8
+
+sm_cvar sv_allow_lobby_connect_only 1
+
+sm_advertisements_interval 160
+
+hostname &quot;WG.ST|非官纯净私服 by WG.ST&quot;</code></pre><h3 id="必要插件-非必要-均兼容linux"><a href="#必要插件-非必要-均兼容linux" class="headerlink" title="必要插件(非必要)均兼容linux"></a>必要插件(非必要)均兼容linux</h3><p>望夜rmc管理插件(万能):<a href="https://forums.alliedmods.net/showthread.php?p=2588153" target="_blank" rel="noopener">https://forums.alliedmods.net/showthread.php?p=2588153</a></p>
+<p>multislots插件(自动添加/踢出bot):<a href="https://forums.alliedmods.net/showthread.php?p=1239544" target="_blank" rel="noopener">https://forums.alliedmods.net/showthread.php?p=1239544</a></p>
+<p>advertisement插件(定期服务器公告):<a href="https://forums.alliedmods.net/showthread.php?t=155705" target="_blank" rel="noopener">https://forums.alliedmods.net/showthread.php?t=155705</a></p>
+<p>以上插件官网均有使用说明(readme</p>
+<p>RMC cfg: </p>
+<pre><code>l4d2_AUOT_ADDBOT &quot;0&quot;</code></pre><p>multislots cfg:默认</p>
+<p>advertisement txt:</p>
+<pre><code>&quot;Advertisements&quot;
+{
+&quot;1&quot;
+{
+    &quot;chat&quot;            &quot;{lightgreen}[[欢迎来到WG.ST的L4D2!]]
+{lightgreen}[当前地图: {default}{currentmap}]
+{lightgreen}[访问democrazyzero.site来加入我们的steam聊天组]
+{lightgreen}[!votemap可进行地图投票]
+{lightgreen}[不定时非官图黑车]&quot;
+}
+}</code></pre><h2 id="突破4人限制说明-8人-16人战役"><a href="#突破4人限制说明-8人-16人战役" class="headerlink" title="突破4人限制说明(8人,16人战役)"></a>突破4人限制说明(8人,16人战役)</h2><p>l4dtoolz设置8人后进入服务器仍是4人，且显示”会话没有足够空位”<br><strong>为防止网络堵塞，超过4人游玩非官图最好保证服务器有至少3mbps的空闲带宽</strong></p>
+<h3 id="方案1"><a href="#方案1" class="headerlink" title="方案1"></a>方案1</h3><p>确保第一个进入服务器的人装有8人插件方可<br><strong>缺点</strong>:人数只能被限制在8人<br><strong>优点</strong>:不会断开steam匹配</p>
+<h3 id="方案2"><a href="#方案2" class="headerlink" title="方案2"></a>方案2</h3><p>config文件中修改/写入</p>
+<pre><code>sv_allow_lobby_connect_only 0
+sv_force_unreserved 1</code></pre><p><strong>缺点</strong>:断开steam大厅，匹配功能被禁用<br><strong>优点</strong>:不需要第一个进入房间的人装有8人，且可以设置更高人数最多32人</p>
+<p><strong>ps: sv_force_unreserved”设置为1后不仅会禁止匹配，之前匹配进服务器的人也会被强制踢出，所以够4人后使用以上关闭steam匹配是不可用的选择</strong></p>
 
             </div>
             <hr/>
@@ -619,7 +655,7 @@ parms=&quot;-game nmrih -strictportbind -ip 91.121.72.41 -port 27015 +clientport
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://democrazyzero.site/linuxgsm-de-shi-yong.html">https://democrazyzero.site/linuxgsm-de-shi-yong.html</a>
+                    <a href="https://democrazyzero.site/l4dserver-bi-ji.html">https://democrazyzero.site/l4dserver-bi-ji.html</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -657,8 +693,8 @@ parms=&quot;-game nmrih -strictportbind -ip 91.121.72.41 -port 27015 +clientport
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/%E6%B8%B8%E6%88%8F/">
-                                    <span class="chip bg-color">游戏</span>
+                                <a href="/tags/gameserver/">
+                                    <span class="chip bg-color">gameserver</span>
                                 </a>
                             
                         </div>
@@ -962,45 +998,47 @@ parms=&quot;-game nmrih -strictportbind -ip 91.121.72.41 -port 27015 +clientport
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/shi-yong-netch-jin-xing-you-xi-jia-su.html">
+                <a href="/l4dserver-bi-ji.html">
                     <div class="card-image">
                         
-                        <img src="https://cdn.jsdelivr.net/gh/Ghroth-follower/ghroth-follower.github.io/images/80702389_p0.jpg" class="responsive-img" alt="使用netch进行TUN/TAP游戏加速改善nat状况">
+                        <img src="https://cdn.jsdelivr.net/gh/Ghroth-follower/ghroth-follower.github.io@master/images/78296283_p0.jpg" class="responsive-img" alt="L4D2建服笔记">
                         
-                        <span class="card-title">使用netch进行TUN/TAP游戏加速改善nat状况</span>
+                        <span class="card-title">L4D2建服笔记</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            记录一下非常好用的游戏加速软件
+                            记录建立私人纯净娱乐服的过程
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2020-06-16
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-08-09
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/%E6%B8%B8%E6%88%8F/" class="post-category">
-                                    游戏
+                            <a href="/categories/%E6%9C%8D%E5%8A%A1%E5%99%A8/" class="post-category">
+                                    服务器
                                 </a>
                             
                             
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E6%B8%B8%E6%88%8F/">
-                        <span class="chip bg-color">游戏</span>
+                    <a href="/tags/gameserver/">
+                        <span class="chip bg-color">gameserver</span>
                     </a>
                     
                 </div>
@@ -1014,30 +1052,30 @@ parms=&quot;-game nmrih -strictportbind -ip 91.121.72.41 -port 27015 +clientport
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/doom-eternal-zuo-bi-kong-zhi-tai.html">
+                <a href="/markdown-yu-fa-zhi-nan.html">
                     <div class="card-image">
                         
-                        <img src="https://cdn.jsdelivr.net/gh/Ghroth-follower/ghroth-follower.github.io/images/234.jpg" class="responsive-img" alt="解锁DOOM ETERNAL(永恒)控制台的作弊指令">
+                        <img src="https://cdn.jsdelivr.net/gh/Ghroth-follower/ghroth-follower.github.io/images/66428733_p0.jpg" class="responsive-img" alt="(摘录)markdown语法指南">
                         
-                        <span class="card-title">解锁DOOM ETERNAL(永恒)控制台的作弊指令</span>
+                        <span class="card-title">(摘录)markdown语法指南</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            基于sunbeam的doom永恒(作弊)控制台解锁
+                            markdown语法
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-05-24
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-06-27
                             </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/%E6%B8%B8%E6%88%8F/" class="post-category">
-                                    游戏
+                            <a href="/categories/markdown/" class="post-category">
+                                    markdown
                                 </a>
                             
                             
@@ -1047,8 +1085,8 @@ parms=&quot;-game nmrih -strictportbind -ip 91.121.72.41 -port 27015 +clientport
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/DOOM%E6%B0%B8%E6%81%92/">
-                        <span class="chip bg-color">DOOM永恒</span>
+                    <a href="/tags/markdown/">
+                        <span class="chip bg-color">markdown</span>
                     </a>
                     
                 </div>

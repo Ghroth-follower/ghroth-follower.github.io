@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://democrazyzero.site/"/>
-  <updated>2020-06-27T01:43:39.216Z</updated>
+  <updated>2020-08-09T10:32:28.276Z</updated>
   <id>https://democrazyzero.site/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>L4D2建服笔记</title>
+    <link href="https://democrazyzero.site/l4dserver-bi-ji.html"/>
+    <id>https://democrazyzero.site/l4dserver-bi-ji.html</id>
+    <published>2020-08-09T09:41:16.000Z</published>
+    <updated>2020-08-09T10:32:28.276Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;安装l4d2server-linuxgsm&quot;&gt;&lt;a href=&quot;#安装l4d2server-linuxgsm&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="服务器" scheme="https://democrazyzero.site/categories/%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
+    
+    
+      <category term="gameserver" scheme="https://democrazyzero.site/tags/gameserver/"/>
+    
+  </entry>
   
   <entry>
     <title>(摘录)markdown语法指南</title>
@@ -76,7 +103,7 @@
     <link href="https://democrazyzero.site/linuxgsm-de-shi-yong.html"/>
     <id>https://democrazyzero.site/linuxgsm-de-shi-yong.html</id>
     <published>2020-06-07T06:52:51.000Z</published>
-    <updated>2020-06-16T06:59:03.958Z</updated>
+    <updated>2020-08-09T09:53:18.963Z</updated>
     
     <summary type="html">
     

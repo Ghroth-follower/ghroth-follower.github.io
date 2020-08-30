@@ -7,7 +7,7 @@
     <link rel="stylesheet" type="text/css" href="/css/loading.css">
     <link  rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Ghroth-follower/ghroth-follower.github.io/live2d/css/live2d.css"  />
     <meta charset="utf-8">
-    <meta name="keywords" content="L4D2建服笔记, WG.ST">
+    <meta name="keywords" content="(笔记)DOOM永恒mod安装, WG.ST">
     <meta name="description" content="格赫罗斯表达了我对物质宇宙的向往与恐惧">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -19,7 +19,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>L4D2建服笔记 | WG.ST</title>
+    <title>(笔记)DOOM永恒mod安装 | WG.ST</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -406,7 +406,7 @@
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">L4D2建服笔记</h1>
+                    <h1 class="description center-align post-title">(笔记)DOOM永恒mod安装</h1>
                 </div>
             </div>
         </div>
@@ -523,8 +523,8 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/gameserver/">
-                                <span class="chip bg-color">gameserver</span>
+                            <a href="/tags/%E7%AC%94%E8%AE%B0/">
+                                <span class="chip bg-color">笔记</span>
                             </a>
                         
                     </div>
@@ -535,8 +535,8 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/%E6%9C%8D%E5%8A%A1%E5%99%A8/" class="post-category">
-                                服务器
+                            <a href="/categories/%E7%AC%94%E8%AE%B0/" class="post-category">
+                                笔记
                             </a>
                         
                     </div>
@@ -548,7 +548,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2020-08-09
+                    2020-08-30
                 </div>
                 
 
@@ -564,76 +564,17 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="安装l4d2server-linuxgsm"><a href="#安装l4d2server-linuxgsm" class="headerlink" title="安装l4d2server(linuxgsm)"></a>安装l4d2server(linuxgsm)</h2><p>使用Xshell</p>
-<h3 id="安装依赖"><a href="#安装依赖" class="headerlink" title="安装依赖"></a>安装依赖</h3><pre><code>yum install epel-release
-
-yum install mailx postfix curl wget tar bzip2 gzip unzip python3 binutils bc jq tmux glibc.i686 libstdc++ libstdc++.i686</code></pre><h3 id="安装服务器"><a href="#安装服务器" class="headerlink" title="安装服务器"></a>安装服务器</h3><ol>
-<li><p>创建用户</p>
-<p> adduser l4d2server<br> su - l4d2server</p>
-</li>
-<li><p>安装linuxgsm</p>
-<p> wget -O linuxgsm.sh <a href="https://linuxgsm.sh" target="_blank" rel="noopener">https://linuxgsm.sh</a> &amp;&amp; chmod +x linuxgsm.sh &amp;&amp; bash linuxgsm.sh l4d2server</p>
-</li>
-</ol>
-<pre><code>./l4d2server install</code></pre><h2 id="必要插件与config的配置"><a href="#必要插件与config的配置" class="headerlink" title="必要插件与config的配置"></a>必要插件与config的配置</h2><h3 id="sourcemod，metamod插件平台，l4dtoolz"><a href="#sourcemod，metamod插件平台，l4dtoolz" class="headerlink" title="sourcemod，metamod插件平台，l4dtoolz"></a>sourcemod，metamod插件平台，l4dtoolz</h3><p><a href="https://www.sourcemod.net/downloads.php?branch=stable" target="_blank" rel="noopener">sourcemod</a><br><a href="https://www.sourcemm.net/snapshots" target="_blank" rel="noopener">metamod:source</a><br><a href="https://forums.alliedmods.net/showthread.php?t=93600" target="_blank" rel="noopener">L4DToolZ</a></p>
-<p>生成L4D2的VDF文件: <a href="https://www.sourcemm.net/vdf" target="_blank" rel="noopener">https://www.sourcemm.net/vdf</a><br>下载后覆盖原文件</p>
-<p>服务器config: l4d2server.cfg文件设置</p>
-<pre><code>sm_cvar fps_max 0
-
-sm_cvar net_splitpacket_maxrate 30000
-
-sm_cvar nb_update_frequency 0.06
-
-sm_cvar sv_minrate 100000
-
-sm_cvar sv_maxrate 101000
-
-sm_cvar sv_mincmdrate 100
-
-sm_cvar sv_maxcmdrate 101
-
-sm_cvar sv_minupdaterate 100
-
-sm_cvar sv_maxupdaterate 101
-
-sm_cvar sv_client_min_interp_ratio -1
-
-sm_cvar sv_client_max_interp_ratio 2
-
-sm_cvar sv_maxplayers 8
-
-sm_cvar sv_visiblemaxplayers 8
-
-sm_cvar sv_allow_lobby_connect_only 1
-
-sm_advertisements_interval 160
-
-hostname &quot;WG.ST|非官纯净私服 by WG.ST&quot;</code></pre><p>tag hidden选择添加</p>
-<h3 id="必要插件-非必要-均兼容linux"><a href="#必要插件-非必要-均兼容linux" class="headerlink" title="必要插件(非必要)均兼容linux"></a>必要插件(非必要)均兼容linux</h3><p>望夜rmc管理插件:<a href="https://forums.alliedmods.net/showthread.php?p=2588153" target="_blank" rel="noopener">https://forums.alliedmods.net/showthread.php?p=2588153</a></p>
-<p>multislots插件(自动添加/踢出bot):<a href="https://forums.alliedmods.net/showthread.php?p=1239544" target="_blank" rel="noopener">https://forums.alliedmods.net/showthread.php?p=1239544</a></p>
-<p>advertisement插件(定期服务器公告):<a href="https://forums.alliedmods.net/showthread.php?t=155705" target="_blank" rel="noopener">https://forums.alliedmods.net/showthread.php?t=155705</a></p>
-<p>以上插件官网均有使用说明(readme</p>
-<p>RMC cfg: </p>
-<pre><code>l4d2_AUOT_ADDBOT &quot;0&quot;</code></pre><p>multislots cfg:默认</p>
-<p>advertisement txt:</p>
-<pre><code>&quot;Advertisements&quot;
-{
-&quot;1&quot;
-{
-    &quot;chat&quot;            &quot;{lightgreen}[[欢迎来到WG.ST的L4D2!]]
-{lightgreen}[当前地图: {default}{currentmap}]
-{lightgreen}[访问democrazyzero.site来加入我们的steam聊天组]
-{lightgreen}[!votemap可进行地图投票]
-{lightgreen}[不定时非官图黑车]&quot;
-}
-}</code></pre><h2 id="突破4人限制解决方案-8人-16人战役"><a href="#突破4人限制解决方案-8人-16人战役" class="headerlink" title="突破4人限制解决方案(8人,16人战役)"></a>突破4人限制解决方案(8人,16人战役)</h2><p>l4dtoolz设置8人后进入服务器仍是4人，且显示”会话没有足够空位”</p>
-<p>因为steam大厅cookie抢答服务器人数导致的人数锁死解决方案</p>
-<p><strong>为防止网络堵塞，超过4人游玩非官图最好保证服务器有至少3mbps的空闲带宽</strong><br>当然如果只打官图的话1mbps也是勉强够用的</p>
-<h3 id="方案1"><a href="#方案1" class="headerlink" title="方案1"></a>方案1</h3><p>确保第一个进入服务器的人装有8人插件方可<br><strong>缺点</strong>:人数只能被限制在8人<br><strong>优点</strong>:不会断开steam匹配</p>
-<h3 id="方案2"><a href="#方案2" class="headerlink" title="方案2"></a>方案2</h3><p>config文件中修改/写入</p>
-<pre><code>sv_allow_lobby_connect_only 0
-sv_force_unreserved 1</code></pre><p><strong>缺点</strong>:断开steam大厅，匹配功能被禁用<br><strong>优点</strong>:不需要第一个进入房间的人装有8人，且可以设置更高人数最多32人</p>
-<p><strong>ps: sv_force_unreserved”设置为1后不仅会禁止匹配，之前匹配进服务器的人也会被强制踢出，所以够4人后使用以上关闭steam匹配是不可用的选择</strong></p>
+                <p>来源:<a href="https://www.youtube.com/watch?v=jM2Q_ENcvB4&amp;t=224s" target="_blank" rel="noopener">https://www.youtube.com/watch?v=jM2Q_ENcvB4&amp;t=224s</a></p>
+<p>演示mod:Taras Nabad Arena Mod by proteh(<a href="https://tinyurl.com/y2vj9bnh" target="_blank" rel="noopener">下载</a>):<br><a href="https://www.youtube.com/watch?v=VyLP7yrOFBo" target="_blank" rel="noopener">youtube</a><br><a href="https://www.bilibili.com/video/BV1Fh411R7bP" target="_blank" rel="noopener">bilibili</a></p>
+<p><a href="https://www.nexusmods.com/doometernal/mods/" target="_blank" rel="noopener">在这里获取更多mod(NEXUSMODS)</a></p>
+<h2 id="必需工具-部分需要翻墙"><a href="#必需工具-部分需要翻墙" class="headerlink" title="必需工具(部分需要翻墙)"></a>必需工具(部分需要翻墙)</h2><p><a href="https://tinyurl.com/y6x9jz3p" target="_blank" rel="noopener">Modloader</a><br><a href="https://tinyurl.com/yyj6qxhb" target="_blank" rel="noopener">EternalModInjector</a><br><a href="https://tinyurl.com/y2wh3ps5" target="_blank" rel="noopener">idRehash v1.0</a><br><a href="https://tinyurl.com/y5wp4o9d" target="_blank" rel="noopener"> EternalPatcher v2.1</a></p>
+<h2 id="基本使用"><a href="#基本使用" class="headerlink" title="基本使用"></a>基本使用</h2><p>steam右键游戏 属性-本地文件-浏览本地文件 进入游戏根目录</p>
+<ul>
+<li>将<strong>DEternal_loadMods.exe</strong>，<strong>EternalModInjector.bat</strong>放入游戏根目录</li>
+<li>将<strong>EternalPatcher_v2.1</strong>解压至游戏根目录，<strong>idRehash_v1.0</strong>解压至游戏根目录的”base”文件夹内</li>
+<li>在游戏根目录新建”Mods”文件夹，将mod放入文件夹内(不解压)</li>
+<li>准备就绪后运行EternalModInjector.bat通过mod进入游戏，ENOJY</li>
+</ul>
 
             </div>
             <hr/>
@@ -659,7 +600,7 @@ sv_force_unreserved 1</code></pre><p><strong>缺点</strong>:断开steam大厅�
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://democrazyzero.site/l4dserver-bi-ji.html">https://democrazyzero.site/l4dserver-bi-ji.html</a>
+                    <a href="https://democrazyzero.site/doommod.html">https://democrazyzero.site/doommod.html</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -697,8 +638,8 @@ sv_force_unreserved 1</code></pre><p><strong>缺点</strong>:断开steam大厅�
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/gameserver/">
-                                    <span class="chip bg-color">gameserver</span>
+                                <a href="/tags/%E7%AC%94%E8%AE%B0/">
+                                    <span class="chip bg-color">笔记</span>
                                 </a>
                             
                         </div>
@@ -1002,9 +943,10 @@ sv_force_unreserved 1</code></pre><p><strong>缺点</strong>:断开steam大厅�
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
                 <a href="/doommod.html">
                     <div class="card-image">
@@ -1021,9 +963,9 @@ sv_force_unreserved 1</code></pre><p><strong>缺点</strong>:断开steam大厅�
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2020-08-30
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-08-30
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
@@ -1036,6 +978,7 @@ sv_force_unreserved 1</code></pre><p><strong>缺点</strong>:断开steam大厅�
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
@@ -1054,30 +997,30 @@ sv_force_unreserved 1</code></pre><p><strong>缺点</strong>:断开steam大厅�
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/markdown-yu-fa-zhi-nan.html">
+                <a href="/l4dserver-bi-ji.html">
                     <div class="card-image">
                         
-                        <img src="https://cdn.jsdelivr.net/gh/Ghroth-follower/ghroth-follower.github.io/images/66428733_p0.jpg" class="responsive-img" alt="(摘录)markdown语法指南">
+                        <img src="https://cdn.jsdelivr.net/gh/Ghroth-follower/ghroth-follower.github.io@master/images/78296283_p0.jpg" class="responsive-img" alt="L4D2建服笔记">
                         
-                        <span class="card-title">(摘录)markdown语法指南</span>
+                        <span class="card-title">L4D2建服笔记</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            markdown语法
+                            记录建立私人纯净娱乐服的过程
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-06-27
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-08-09
                             </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/markdown/" class="post-category">
-                                    markdown
+                            <a href="/categories/%E6%9C%8D%E5%8A%A1%E5%99%A8/" class="post-category">
+                                    服务器
                                 </a>
                             
                             
@@ -1087,8 +1030,8 @@ sv_force_unreserved 1</code></pre><p><strong>缺点</strong>:断开steam大厅�
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/markdown/">
-                        <span class="chip bg-color">markdown</span>
+                    <a href="/tags/gameserver/">
+                        <span class="chip bg-color">gameserver</span>
                     </a>
                     
                 </div>

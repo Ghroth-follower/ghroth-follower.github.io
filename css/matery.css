@@ -958,7 +958,7 @@ article .article-tags .chip {
     font-weight: 400;
     height: 22px;
     line-height: 22px;
-    color: #fff;
+    color: #000;
     border-radius: 10px;
 }
 
@@ -1060,7 +1060,7 @@ article .article-tags .chip {
     font-weight: 400;
     height: 25px;
     line-height: 24px;
-    color: #fff;
+    color: #000;
     border-radius: 15px;
     margin-right: 5px;
     margin-bottom: 2px;
@@ -1075,7 +1075,7 @@ article .article-tags .chip {
     margin-right: 5px;
     margin-bottom: 2px;
     color: #42b983;
-    background: #fff;
+    background: #000;
     border: 1px solid;
     transition: all 0.6s ease-in-out;
 }
@@ -1968,7 +1968,7 @@ footer .copy-right {
 }
 
 .lg-sub-html .center-caption {
-    color: #fff !important;
+    color: #000 !important;
     border-bottom: none;
 }
 

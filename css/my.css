@@ -69,5 +69,6 @@ body{
 background-image:url(https://cdn.jsdelivr.net/gh/Ghroth-follower/ghroth-follower.github.io@master/images/BG2.jpg);
 background-repeat: no-repeat;
 background-attachment:fixed;
+background-size: cover;
 background-position:50% 50%; 
 }

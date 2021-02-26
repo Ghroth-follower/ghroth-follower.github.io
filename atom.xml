@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://democrazyzero.site/"/>
-  <updated>2021-02-26T09:28:17.528Z</updated>
+  <updated>2021-02-26T13:19:40.637Z</updated>
   <id>https://democrazyzero.site/</id>
   
   <author>
@@ -17,11 +17,11 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>(笔记)DOOM永恒mod安装</title>
+    <title>DOOM游玩笔记整合</title>
     <link href="https://democrazyzero.site/doom-bi-ji-zheng-he.html"/>
     <id>https://democrazyzero.site/doom-bi-ji-zheng-he.html</id>
     <published>2020-08-30T05:32:08.000Z</published>
-    <updated>2021-02-26T09:28:17.528Z</updated>
+    <updated>2021-02-26T13:19:40.637Z</updated>
     
     <summary type="html">
     
@@ -150,34 +150,6 @@
     
     
       <category term="游戏" scheme="https://democrazyzero.site/tags/%E6%B8%B8%E6%88%8F/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>解锁DOOM ETERNAL(永恒)控制台的作弊指令</title>
-    <link href="https://democrazyzero.site/doom-eternal-zuo-bi-kong-zhi-tai.html"/>
-    <id>https://democrazyzero.site/doom-eternal-zuo-bi-kong-zhi-tai.html</id>
-    <published>2020-05-24T07:24:27.000Z</published>
-    <updated>2020-11-15T09:31:18.863Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;p&gt;我们在游戏中可以按下键盘左上角的~键打开控制台，但是官方为了游戏的平衡性已经把作弊指令进行了移除(大概吧)&lt;br&gt;不过有一个好消息&lt;br&gt;&lt;strong&gt;sunbeam的doom永恒CT可以让我们启用作弊指令&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;在此先贴上sunbeam的原贴链
-        
-      
-    
-    </summary>
-    
-    
-      <category term="游戏" scheme="https://democrazyzero.site/categories/%E6%B8%B8%E6%88%8F/"/>
-    
-    
-      <category term="DOOM永恒" scheme="https://democrazyzero.site/tags/DOOM%E6%B0%B8%E6%81%92/"/>
     
   </entry>
   

@@ -564,15 +564,15 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>##安装blackmesa服务端##<br>还是一贯的<a href="https://linuxgsm.com/lgsm/bmdmserver/" target="_blank" rel="noopener">linuxgsm</a></p>
+                <h2 id="安装blackmesa服务端"><a href="#安装blackmesa服务端" class="headerlink" title="安装blackmesa服务端"></a>安装blackmesa服务端</h2><p>还是一贯的<a href="https://linuxgsm.com/lgsm/bmdmserver/" target="_blank" rel="noopener">linuxgsm</a></p>
 <p>系统CENTOS7.5</p>
-<p>###安装依赖###<br>    yum install epel-release<br>    yum install curl wget tar bzip2 gzip unzip python3 binutils bc jq tmux glibc.i686 libstdc++ libstdc++.i686 ncurses-libs.i686<br>###下载游戏，配置启动参数###<br>新增用户，切换到用户</p>
+<h3 id="安装依赖"><a href="#安装依赖" class="headerlink" title="安装依赖"></a>安装依赖</h3><pre><code>yum install epel-release
+yum install curl wget tar bzip2 gzip unzip python3 binutils bc jq tmux glibc.i686 libstdc++ libstdc++.i686 ncurses-libs.i686</code></pre><h3 id="下载游戏，配置启动参数"><a href="#下载游戏，配置启动参数" class="headerlink" title="下载游戏，配置启动参数"></a>下载游戏，配置启动参数</h3><p>新增用户，切换到用户</p>
 <pre><code>adduser bmdmserver
 
 su - bmdmserver</code></pre><p>下载运行脚本</p>
 <pre><code>wget -O linuxgsm.sh https://linuxgsm.sh &amp;&amp; chmod +x linuxgsm.sh &amp;&amp; bash linuxgsm.sh bmdmserver
-./bmdmserver install</code></pre><p>##安装配置sourcecoop##</p>
-<p><a href="https://github.com/ampreeT/SourceCoop" target="_blank" rel="noopener">sourcecoop项目地址</a></p>
+./bmdmserver install</code></pre><h2 id="安装配置sourcecoop"><a href="#安装配置sourcecoop" class="headerlink" title="安装配置sourcecoop"></a>安装配置sourcecoop</h2><p><a href="https://github.com/ampreeT/SourceCoop" target="_blank" rel="noopener">sourcecoop项目地址</a></p>
 <p>根据github提供的readme下载相应的<a href="https://www.sourcemod.net/downloads.php?branch=dev" target="_blank" rel="noopener">sourcemod</a>与<a href="https://www.sourcemm.net/downloads.php?branch=stable" target="_blank" rel="noopener">metamod</a>并安装，哦别忘了sourcecoop还需要<a href="https://github.com/peace-maker/DHooks2/releases" target="_blank" rel="noopener">DHooks</a></p>
 <p>全部安装完成后下载安装最新的<a href="https://github.com/ampreeT/SourceCoop/releases" target="_blank" rel="noopener">sourcecooprelease</a></p>
 <p>以上步骤只需要解压到serverfiles中的bms中即可</p>

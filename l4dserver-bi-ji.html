@@ -548,7 +548,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2020-08-09
+                    2021-07-23
                 </div>
                 
 
@@ -575,7 +575,7 @@ yum install mailx postfix curl wget tar bzip2 gzip unzip python3 binutils bc jq 
 <p> wget -O linuxgsm.sh <a href="https://linuxgsm.sh" target="_blank" rel="noopener">https://linuxgsm.sh</a> &amp;&amp; chmod +x linuxgsm.sh &amp;&amp; bash linuxgsm.sh l4d2server</p>
 </li>
 </ol>
-<pre><code>./l4d2server install</code></pre><h2 id="必要插件与config的配置"><a href="#必要插件与config的配置" class="headerlink" title="必要插件与config的配置"></a>必要插件与config的配置</h2><h3 id="sourcemod，metamod插件平台，l4dtoolz"><a href="#sourcemod，metamod插件平台，l4dtoolz" class="headerlink" title="sourcemod，metamod插件平台，l4dtoolz"></a>sourcemod，metamod插件平台，l4dtoolz</h3><p><a href="https://www.sourcemod.net/downloads.php?branch=stable" target="_blank" rel="noopener">sourcemod</a><br><a href="https://www.sourcemm.net/snapshots" target="_blank" rel="noopener">metamod:source</a><br><a href="https://forums.alliedmods.net/showthread.php?t=93600" target="_blank" rel="noopener">L4DToolZ</a></p>
+<pre><code>./l4d2server install</code></pre><h2 id="必要插件与config的配置"><a href="#必要插件与config的配置" class="headerlink" title="必要插件与config的配置"></a>必要插件与config的配置</h2><h3 id="sourcemod，metamod插件平台，l4dtoolz"><a href="#sourcemod，metamod插件平台，l4dtoolz" class="headerlink" title="sourcemod，metamod插件平台，l4dtoolz"></a>sourcemod，metamod插件平台，l4dtoolz</h3><p><a href="https://www.sourcemod.net/downloads.php?branch=stable" target="_blank" rel="noopener">sourcemod</a><br><a href="https://www.sourcemm.net/snapshots" target="_blank" rel="noopener">metamod:source</a><br><a href="https://github.com/Accelerator74/l4dtoolz/releases" target="_blank" rel="noopener">L4DToolZ</a></p>
 <p>生成L4D2的VDF文件: <a href="https://www.sourcemm.net/vdf" target="_blank" rel="noopener">https://www.sourcemm.net/vdf</a><br>下载后覆盖原文件</p>
 <p>服务器config: l4d2server.cfg文件设置</p>
 <pre><code>sm_cvar fps_max 0
@@ -634,6 +634,9 @@ hostname &quot;WG.ST|非官纯净私服 by WG.ST&quot;</code></pre><p>tag hidden
 <pre><code>sv_allow_lobby_connect_only 0
 sv_force_unreserved 1</code></pre><p><strong>缺点</strong>:断开steam大厅，匹配功能被禁用<br><strong>优点</strong>:不需要第一个进入房间的人装有8人，且可以设置更高人数最多32人</p>
 <p><strong>ps: sv_force_unreserved”设置为1后不仅会禁止匹配，之前匹配进服务器的人也会被强制踢出，所以够4人后使用以上关闭steam匹配是不可用的选择</strong></p>
+<p>##2021年7月l4dtoolz补充##</p>
+<p>alliedmodders提供的的l4dtoolz(1.0.0.9h)已经无法在现版本的linux客户端中正常运行(init error)，请移步github下载最新release</p>
+<p><a href="https://github.com/Accelerator74/l4dtoolz/releases" target="_blank" rel="noopener">https://github.com/Accelerator74/l4dtoolz/releases</a></p>
 
             </div>
             <hr/>
@@ -659,7 +662,7 @@ sv_force_unreserved 1</code></pre><p><strong>缺点</strong>:断开steam大厅�
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://democrazyzero.site/l4dserver-bi-ji.html">https://democrazyzero.site/l4dserver-bi-ji.html</a>
+                    <a href="https://blog.inchaos.icu/l4dserver-bi-ji.html">https://blog.inchaos.icu/l4dserver-bi-ji.html</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -1006,6 +1009,54 @@ sv_force_unreserved 1</code></pre><p><strong>缺点</strong>:断开steam大厅�
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
+                <a href="/sourcecoop.html">
+                    <div class="card-image">
+                        
+                        <img src="https://cdn.jsdelivr.net/gh/Ghroth-follower/ghroth-follower.github.io@master/medias/featureimages/3.jpg" class="responsive-img" alt="BlackMesa合作战役笔记(linux&amp;sourcecoop)">
+                        
+                        <span class="card-title">BlackMesa合作战役笔记(linux&amp;sourcecoop)</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            blackmesa合作战役的实现笔记
+                        
+                    </div>
+                    <div class="publish-info">
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2021-07-24
+                        </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/server/" class="post-category">
+                                    server
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/gamerserver/">
+                        <span class="chip bg-color">gamerserver</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
                 <a href="/doom-bi-ji-zheng-he.html">
                     <div class="card-image">
                         
@@ -1021,9 +1072,9 @@ sv_force_unreserved 1</code></pre><p><strong>缺点</strong>:断开steam大厅�
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2020-08-30
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-08-30
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
@@ -1041,54 +1092,6 @@ sv_force_unreserved 1</code></pre><p><strong>缺点</strong>:断开steam大厅�
                     
                     <a href="/tags/%E7%AC%94%E8%AE%B0/">
                         <span class="chip bg-color">笔记</span>
-                    </a>
-                    
-                </div>
-                
-            </div>
-        </div>
-        
-        
-        <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge right-badge text-color">
-                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
-            </div>
-            <div class="card">
-                <a href="/markdown-yu-fa-zhi-nan.html">
-                    <div class="card-image">
-                        
-                        <img src="https://cdn.jsdelivr.net/gh/Ghroth-follower/ghroth-follower.github.io@master/images/66428733_p0.jpg" class="responsive-img" alt="(摘录)markdown语法指南">
-                        
-                        <span class="card-title">(摘录)markdown语法指南</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary block-with-text">
-                        
-                            markdown语法
-                        
-                    </div>
-                    <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-06-27
-                            </span>
-                        <span class="publish-author">
-                            
-                            <i class="fas fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/categories/markdown/" class="post-category">
-                                    markdown
-                                </a>
-                            
-                            
-                        </span>
-                    </div>
-                </div>
-                
-                <div class="card-action article-tags">
-                    
-                    <a href="/tags/markdown/">
-                        <span class="chip bg-color">markdown</span>
                     </a>
                     
                 </div>
@@ -1401,25 +1404,6 @@ $(function () {
 
     
 
-    
-    <script>
-        (function (i, s, o, g, r, a, m) {
-            i["DaoVoiceObject"] = r;
-            i[r] = i[r] || function () {
-                (i[r].q = i[r].q || []).push(arguments)
-            }, i[r].l = 1 * new Date();
-            a = s.createElement(o), m = s.getElementsByTagName(o)[0];
-            a.async = 1;
-            a.src = g;
-            a.charset = "utf-8";
-            m.parentNode.insertBefore(a, m)
-        })(window, document, "script", ('https:' == document.location.protocol ? 'https:' : 'http:') +
-            "//widget.daovoice.io/widget/6984b559.js", "daovoice")
-        daovoice('init', {
-            app_id: "b8d184f5"
-        });
-        daovoice('update');
-    </script>
     
 
     

@@ -5,9 +5,9 @@
   <subtitle>Times.....</subtitle>
   <link href="/atom.xml" rel="self"/>
   
-  <link href="https://democrazyzero.site/"/>
-  <updated>2021-02-26T13:19:40.637Z</updated>
-  <id>https://democrazyzero.site/</id>
+  <link href="https://blog.inchaos.icu/"/>
+  <updated>2021-07-24T03:08:26.814Z</updated>
+  <id>https://blog.inchaos.icu/</id>
   
   <author>
     <name>EvsinChaos</name>
@@ -17,9 +17,63 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>BlackMesa合作战役笔记(linux&amp;sourcecoop)</title>
+    <link href="https://blog.inchaos.icu/sourcecoop.html"/>
+    <id>https://blog.inchaos.icu/sourcecoop.html</id>
+    <published>2021-07-24T02:50:21.000Z</published>
+    <updated>2021-07-24T03:08:26.814Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;##安装blackmesa服务端##&lt;br&gt;还是一贯的&lt;a href=&quot;https://linuxgsm.com/lgsm/bmdmserver/&quot; target=&quot;_blank&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="server" scheme="https://blog.inchaos.icu/categories/server/"/>
+    
+    
+      <category term="gamerserver" scheme="https://blog.inchaos.icu/tags/gamerserver/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>L4D2建服笔记</title>
+    <link href="https://blog.inchaos.icu/l4dserver-bi-ji.html"/>
+    <id>https://blog.inchaos.icu/l4dserver-bi-ji.html</id>
+    <published>2021-07-23T09:41:16.000Z</published>
+    <updated>2021-07-24T03:13:01.294Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;安装l4d2server-linuxgsm&quot;&gt;&lt;a href=&quot;#安装l4d2server-linuxgsm&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="服务器" scheme="https://blog.inchaos.icu/categories/%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
+    
+    
+      <category term="gameserver" scheme="https://blog.inchaos.icu/tags/gameserver/"/>
+    
+  </entry>
+  
+  <entry>
     <title>DOOM游玩笔记整合</title>
-    <link href="https://democrazyzero.site/doom-bi-ji-zheng-he.html"/>
-    <id>https://democrazyzero.site/doom-bi-ji-zheng-he.html</id>
+    <link href="https://blog.inchaos.icu/doom-bi-ji-zheng-he.html"/>
+    <id>https://blog.inchaos.icu/doom-bi-ji-zheng-he.html</id>
     <published>2020-08-30T05:32:08.000Z</published>
     <updated>2021-02-26T13:19:40.637Z</updated>
     
@@ -36,44 +90,17 @@
     </summary>
     
     
-      <category term="笔记" scheme="https://democrazyzero.site/categories/%E7%AC%94%E8%AE%B0/"/>
+      <category term="笔记" scheme="https://blog.inchaos.icu/categories/%E7%AC%94%E8%AE%B0/"/>
     
     
-      <category term="笔记" scheme="https://democrazyzero.site/tags/%E7%AC%94%E8%AE%B0/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>L4D2建服笔记</title>
-    <link href="https://democrazyzero.site/l4dserver-bi-ji.html"/>
-    <id>https://democrazyzero.site/l4dserver-bi-ji.html</id>
-    <published>2020-08-09T09:41:16.000Z</published>
-    <updated>2020-08-30T05:31:18.492Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h2 id=&quot;安装l4d2server-linuxgsm&quot;&gt;&lt;a href=&quot;#安装l4d2server-linuxgsm&quot; class=&quot;headerlink&quot;
-        
-      
-    
-    </summary>
-    
-    
-      <category term="服务器" scheme="https://democrazyzero.site/categories/%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
-    
-    
-      <category term="gameserver" scheme="https://democrazyzero.site/tags/gameserver/"/>
+      <category term="笔记" scheme="https://blog.inchaos.icu/tags/%E7%AC%94%E8%AE%B0/"/>
     
   </entry>
   
   <entry>
     <title>(摘录)markdown语法指南</title>
-    <link href="https://democrazyzero.site/markdown-yu-fa-zhi-nan.html"/>
-    <id>https://democrazyzero.site/markdown-yu-fa-zhi-nan.html</id>
+    <link href="https://blog.inchaos.icu/markdown-yu-fa-zhi-nan.html"/>
+    <id>https://blog.inchaos.icu/markdown-yu-fa-zhi-nan.html</id>
     <published>2020-06-27T00:44:46.000Z</published>
     <updated>2020-11-15T09:31:17.123Z</updated>
     
@@ -90,17 +117,17 @@
     </summary>
     
     
-      <category term="markdown" scheme="https://democrazyzero.site/categories/markdown/"/>
+      <category term="markdown" scheme="https://blog.inchaos.icu/categories/markdown/"/>
     
     
-      <category term="markdown" scheme="https://democrazyzero.site/tags/markdown/"/>
+      <category term="markdown" scheme="https://blog.inchaos.icu/tags/markdown/"/>
     
   </entry>
   
   <entry>
     <title>使用netch进行TUN/TAP游戏加速改善nat状况</title>
-    <link href="https://democrazyzero.site/shi-yong-netch-jin-xing-you-xi-jia-su.html"/>
-    <id>https://democrazyzero.site/shi-yong-netch-jin-xing-you-xi-jia-su.html</id>
+    <link href="https://blog.inchaos.icu/shi-yong-netch-jin-xing-you-xi-jia-su.html"/>
+    <id>https://blog.inchaos.icu/shi-yong-netch-jin-xing-you-xi-jia-su.html</id>
     <published>2020-06-16T06:19:00.000Z</published>
     <updated>2020-11-15T09:31:18.243Z</updated>
     
@@ -118,17 +145,17 @@
     </summary>
     
     
-      <category term="游戏" scheme="https://democrazyzero.site/categories/%E6%B8%B8%E6%88%8F/"/>
+      <category term="游戏" scheme="https://blog.inchaos.icu/categories/%E6%B8%B8%E6%88%8F/"/>
     
     
-      <category term="游戏" scheme="https://democrazyzero.site/tags/%E6%B8%B8%E6%88%8F/"/>
+      <category term="游戏" scheme="https://blog.inchaos.icu/tags/%E6%B8%B8%E6%88%8F/"/>
     
   </entry>
   
   <entry>
     <title>使用linuxgsm来管理你的游戏服务器</title>
-    <link href="https://democrazyzero.site/linuxgsm-de-shi-yong.html"/>
-    <id>https://democrazyzero.site/linuxgsm-de-shi-yong.html</id>
+    <link href="https://blog.inchaos.icu/linuxgsm-de-shi-yong.html"/>
+    <id>https://blog.inchaos.icu/linuxgsm-de-shi-yong.html</id>
     <published>2020-06-07T06:52:51.000Z</published>
     <updated>2020-11-15T09:31:16.175Z</updated>
     
@@ -146,17 +173,17 @@
     </summary>
     
     
-      <category term="server" scheme="https://democrazyzero.site/categories/server/"/>
+      <category term="server" scheme="https://blog.inchaos.icu/categories/server/"/>
     
     
-      <category term="游戏" scheme="https://democrazyzero.site/tags/%E6%B8%B8%E6%88%8F/"/>
+      <category term="游戏" scheme="https://blog.inchaos.icu/tags/%E6%B8%B8%E6%88%8F/"/>
     
   </entry>
   
   <entry>
     <title>matery个性修改与深度优化(二)</title>
-    <link href="https://democrazyzero.site/matery-ge-xing-xiu-gai-yu-shen-du-you-hua.html"/>
-    <id>https://democrazyzero.site/matery-ge-xing-xiu-gai-yu-shen-du-you-hua.html</id>
+    <link href="https://blog.inchaos.icu/matery-ge-xing-xiu-gai-yu-shen-du-you-hua.html"/>
+    <id>https://blog.inchaos.icu/matery-ge-xing-xiu-gai-yu-shen-du-you-hua.html</id>
     <published>2020-05-17T06:27:26.000Z</published>
     <updated>2020-11-15T09:31:17.685Z</updated>
     
@@ -175,17 +202,17 @@
     </summary>
     
     
-      <category term="web" scheme="https://democrazyzero.site/categories/web/"/>
+      <category term="web" scheme="https://blog.inchaos.icu/categories/web/"/>
     
     
-      <category term="hexo" scheme="https://democrazyzero.site/tags/hexo/"/>
+      <category term="hexo" scheme="https://blog.inchaos.icu/tags/hexo/"/>
     
   </entry>
   
   <entry>
     <title>对互联网的一些看法</title>
-    <link href="https://democrazyzero.site/bai-du-shou-lu-zhi-de-ma.html"/>
-    <id>https://democrazyzero.site/bai-du-shou-lu-zhi-de-ma.html</id>
+    <link href="https://blog.inchaos.icu/bai-du-shou-lu-zhi-de-ma.html"/>
+    <id>https://blog.inchaos.icu/bai-du-shou-lu-zhi-de-ma.html</id>
     <published>2020-05-03T06:35:53.000Z</published>
     <updated>2020-11-15T09:31:17.842Z</updated>
     
@@ -202,17 +229,17 @@
     </summary>
     
     
-      <category term="吐槽" scheme="https://democrazyzero.site/categories/%E5%90%90%E6%A7%BD/"/>
+      <category term="吐槽" scheme="https://blog.inchaos.icu/categories/%E5%90%90%E6%A7%BD/"/>
     
     
-      <category term="杂项" scheme="https://democrazyzero.site/tags/%E6%9D%82%E9%A1%B9/"/>
+      <category term="杂项" scheme="https://blog.inchaos.icu/tags/%E6%9D%82%E9%A1%B9/"/>
     
   </entry>
   
   <entry>
     <title>修改后matery的已知问题</title>
-    <link href="https://democrazyzero.site/xiu-gai-matery-de-yi-zhi-wen-ti.html"/>
-    <id>https://democrazyzero.site/xiu-gai-matery-de-yi-zhi-wen-ti.html</id>
+    <link href="https://blog.inchaos.icu/xiu-gai-matery-de-yi-zhi-wen-ti.html"/>
+    <id>https://blog.inchaos.icu/xiu-gai-matery-de-yi-zhi-wen-ti.html</id>
     <published>2020-05-03T06:01:56.000Z</published>
     <updated>2020-11-15T09:31:18.641Z</updated>
     
@@ -229,17 +256,17 @@
     </summary>
     
     
-      <category term="web" scheme="https://democrazyzero.site/categories/web/"/>
+      <category term="web" scheme="https://blog.inchaos.icu/categories/web/"/>
     
     
-      <category term="hexo" scheme="https://democrazyzero.site/tags/hexo/"/>
+      <category term="hexo" scheme="https://blog.inchaos.icu/tags/hexo/"/>
     
   </entry>
   
   <entry>
     <title>英语积累</title>
-    <link href="https://democrazyzero.site/ying-yu-ji-lei-bi-ji.html"/>
-    <id>https://democrazyzero.site/ying-yu-ji-lei-bi-ji.html</id>
+    <link href="https://blog.inchaos.icu/ying-yu-ji-lei-bi-ji.html"/>
+    <id>https://blog.inchaos.icu/ying-yu-ji-lei-bi-ji.html</id>
     <published>2020-04-30T14:46:57.000Z</published>
     <updated>2020-11-15T09:31:19.526Z</updated>
     
@@ -262,17 +289,17 @@
     </summary>
     
     
-      <category term="学习" scheme="https://democrazyzero.site/categories/%E5%AD%A6%E4%B9%A0/"/>
+      <category term="学习" scheme="https://blog.inchaos.icu/categories/%E5%AD%A6%E4%B9%A0/"/>
     
     
-      <category term="杂项" scheme="https://democrazyzero.site/tags/%E6%9D%82%E9%A1%B9/"/>
+      <category term="杂项" scheme="https://blog.inchaos.icu/tags/%E6%9D%82%E9%A1%B9/"/>
     
   </entry>
   
   <entry>
     <title>matery个性修改与深度优化(一)</title>
-    <link href="https://democrazyzero.site/hexo-jian-zhan-guo-cheng-yu-xi-jie.html"/>
-    <id>https://democrazyzero.site/hexo-jian-zhan-guo-cheng-yu-xi-jie.html</id>
+    <link href="https://blog.inchaos.icu/hexo-jian-zhan-guo-cheng-yu-xi-jie.html"/>
+    <id>https://blog.inchaos.icu/hexo-jian-zhan-guo-cheng-yu-xi-jie.html</id>
     <published>2020-04-30T05:32:47.000Z</published>
     <updated>2020-11-15T09:31:19.063Z</updated>
     
@@ -291,17 +318,17 @@
     </summary>
     
     
-      <category term="web" scheme="https://democrazyzero.site/categories/web/"/>
+      <category term="web" scheme="https://blog.inchaos.icu/categories/web/"/>
     
     
-      <category term="hexo" scheme="https://democrazyzero.site/tags/hexo/"/>
+      <category term="hexo" scheme="https://blog.inchaos.icu/tags/hexo/"/>
     
   </entry>
   
   <entry>
     <title>K2P A2刷机遇到的telnet问题</title>
-    <link href="https://democrazyzero.site/k2p-a2-shua-ji-yu-dao-de-telnet-wen-ti.html"/>
-    <id>https://democrazyzero.site/k2p-a2-shua-ji-yu-dao-de-telnet-wen-ti.html</id>
+    <link href="https://blog.inchaos.icu/k2p-a2-shua-ji-yu-dao-de-telnet-wen-ti.html"/>
+    <id>https://blog.inchaos.icu/k2p-a2-shua-ji-yu-dao-de-telnet-wen-ti.html</id>
     <published>2018-08-30T07:38:20.000Z</published>
     <updated>2020-11-15T09:31:19.303Z</updated>
     
@@ -319,17 +346,17 @@
     </summary>
     
     
-      <category term="硬件" scheme="https://democrazyzero.site/categories/%E7%A1%AC%E4%BB%B6/"/>
+      <category term="硬件" scheme="https://blog.inchaos.icu/categories/%E7%A1%AC%E4%BB%B6/"/>
     
     
-      <category term="硬件" scheme="https://democrazyzero.site/tags/%E7%A1%AC%E4%BB%B6/"/>
+      <category term="硬件" scheme="https://blog.inchaos.icu/tags/%E7%A1%AC%E4%BB%B6/"/>
     
   </entry>
   
   <entry>
     <title>从这里开始</title>
-    <link href="https://democrazyzero.site/cong-zhe-li-kai-shi.html"/>
-    <id>https://democrazyzero.site/cong-zhe-li-kai-shi.html</id>
+    <link href="https://blog.inchaos.icu/cong-zhe-li-kai-shi.html"/>
+    <id>https://blog.inchaos.icu/cong-zhe-li-kai-shi.html</id>
     <published>2018-04-26T10:00:57.000Z</published>
     <updated>2020-11-15T09:31:18.043Z</updated>
     
@@ -347,10 +374,10 @@
     </summary>
     
     
-      <category term="show" scheme="https://democrazyzero.site/categories/show/"/>
+      <category term="show" scheme="https://blog.inchaos.icu/categories/show/"/>
     
     
-      <category term="杂项" scheme="https://democrazyzero.site/tags/%E6%9D%82%E9%A1%B9/"/>
+      <category term="杂项" scheme="https://blog.inchaos.icu/tags/%E6%9D%82%E9%A1%B9/"/>
     
   </entry>
   
